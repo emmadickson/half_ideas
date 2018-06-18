@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <style>
+      body{
+        background: black;
+        margin: 0;
+        padding: 0;
+      }
+      #glitch{
+        font-family: 'VT323', monospace;
+        font-size: 250px;
+        color: white;
+        text-align: center;
+        width:100%;
+        height:100%
+      }
+    </style>
+  </head>
+
+  <body>
+
+     <img id="glitch" >
+
+  </body>
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/original_gif.js"></script>
+  <script type="text/javascript" src="js/gif_components.js"></script>
+
+  <script>
+  var longshot = document.getElementById('glitch')
+  mouthmouth_bytes = []
+  mouthmouth = mouthmouth.split(",")
+  for(var i = 0; i < mouthmouth.length; i++){
+    mouthmouth_bytes.push(mouthmouth[i].slice(3,5))
+  }
+  mouthmouth_bytes[0] = '47'
+
+  gif_object = gif_components(mouthmouth_bytes)
+  if (gif_object.global_color_table != undefined){
+    for (var j = 0; j < gif_object.global_color_table.length; j++){
+      gif_object.global_color_table[j] = makeid()
+    }
+    var iteration = []
+    iteration = gif_object.header.join(' ')
+    console.log(iteration)
+    iteration = iteration + " " + gif_object.logical_screen_descriptor.full_string.join(' ')
+    console.log(iteration)
+
+    iteration = iteration + " " + gif_object.global_color_table.join(' ')
+    console.log(iteration)
+
+    iteration = iteration + " " + gif_object.graphics_control_ext.full_string.join(' ')
+    console.log(iteration)
+
+    iteration = iteration + " " + gif_object.image_descriptor.full_string.join(' ')
+    console.log(iteration)
+
+    iteration = iteration + " " + gif_object.image_data.join(' ')
+    console.log(iteration)
+
+    iteration = iteration + " " + gif_object.trailer.join(' ')
+    console.log(iteration)
+    console.log(gif_object.trailer.join(' '))
+
+  }
+  else{
+    var iteration = mouthmouth_bytes.join(' ')
+  }
+
+  iteration = hexToBase64(iteration)
+  console.log(iteration)
+  longshot.src = "data:image/png;base64," + iteration
+
+  </script>
+</html>

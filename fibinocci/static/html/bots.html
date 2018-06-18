@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <style>
+      body{
+        background: black;
+        margin: 0;
+        padding: 0;
+      }
+      #glitch{
+        font-family: 'VT323', monospace;
+        font-size: 250px;
+        color: white;
+        text-align: center;
+        width:100%;
+        height:100%
+      }
+    </style>
+  </head>
+
+  <body>
+     <img id="glitch" >
+  </body>
+
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/original_gif.js"></script>
+  <script type="text/javascript" src="js/gif_components.js"></script>
+
+  <script>
+    function ReverseShuffle(color, gifObject, j){
+      gifObject.globalColorTable[j] = color.slice(0,2);
+      gifObject.globalColorTable[j-1] = color.slice(2,4);
+      gifObject.globalColorTable[j-2] = color.slice(4,6)
+      return gifObject
+    }
+
+    function MiddleShuffle(color, gifObject, j){
+      gifObject.globalColorTable[j] = color.slice(0,2);
+      gifObject.globalColorTable[j-1] = color.slice(4,6);
+      gifObject.globalColorTable[j-2] = color.slice(2,4)
+    }
+
+    function CleanGifText(){
+      originalGifTextBytes = []
+      originalGifText = originalGifText.split(",")
+      for(var i = 0; i < originalGifText.length; i++){
+        originalGifTextBytes.push(originalGifText[i].slice(3,5))
+      }
+      originalGifTextBytes[0] = '47'
+      return originalGifTextBytes;
+    }
+
+    function CreateGlitchedGif(gifObject){
+      var glitchedGif = ''
+      glitchedGif = gifObject.header.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.logicalScreenDescriptor.fullString.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.globalColorTable.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.graphicsControlExt.fullString.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.imageDescriptor.fullString.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.imageData.join(' ')
+      glitchedGif = glitchedGif + " " + gifObject.trailer.join(' ')
+      return glitchedGif
+    }
+
+    function ShuffleGlobalColorTable(gifObject){
+      for (var j = 3; j < gifObject.globalColorTable.length; j=j+3){
+        color = gifObject.globalColorTable[j-2]+
+        gifObject.globalColorTable[j-1]+
+        gifObject.globalColorTable[j]
+        var shuffle_type = Math.floor(Math.random() * 3);
+
+        if (shuffle_type == 0){
+          gifObject = ReverseShuffle(color, gifObject, j)
+        }
+        if (shuffle_type == 1){
+          gifObject = ReverseShuffle(color, gifObject, j)
+        }
+      }
+      glitchedGif = CreateGlitchedGif(gifObject)
+      return glitchedGif
+    }
+
+    var gifDomElement = document.getElementById('glitch')
+    originalGifTextBytes = CleanGifText()
+    gifObject = GifComponents(originalGifTextBytes)
+    if (gifObject.globalColorTable != undefined){
+      var glitchedGif = ShuffleGlobalColorTable(gifObject)
+    }
+    else{
+      var glitchedGif = originalGifTextBytes.join(' ')
+    }
+    glitchedGif = HexToBase64(glitchedGif)
+    gifDomElement.src = "data:image/png;base64," + glitchedGif
+
+  </script>
+</html>

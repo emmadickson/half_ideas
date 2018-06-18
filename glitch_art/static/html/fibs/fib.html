@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      body{
+        background-color: 'black';
+        overflow: hidden;
+        position: relative;
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+      #one{
+        position: absolute;
+        width:20px;
+        height:20px;
+      }
+      #two{
+        position: absolute;
+        width:20px;
+        height:20px;
+      }
+      #three{
+        position: absolute;
+        width:40px;
+        height:40px;
+      }
+      #four{
+        position: absolute;
+        width:60px;
+        height:60px;
+      }
+      #five{
+        position: absolute;
+        width:100px;
+        height:100px;
+      }
+      #six{
+        position: absolute;
+        width:160px;
+        height:160px;
+      }
+      #seven{
+        position: absolute;
+        width:260px;
+        height:260px;
+      }
+      #eight{
+        position: absolute;
+        width:420px;
+        height:420px;
+      }
+    </style>
+  </head>
+
+  <body>
+     <iframe id="six" src="html/fibs/frame6.html" frameBorder="0"></iframe>
+     <iframe id="five" src="html/fibs/frame5.html" frameBorder="0"></iframe>
+     <iframe id="one" src="html/fibs/frame1.html" frameBorder="0"></iframe>
+     <iframe id="two" src="html/fibs/frame2.html" frameBorder="0"></iframe>
+     <iframe id="three" src="html/fibs/frame3.html" frameBorder="0"></iframe>
+     <iframe id="four" src="html/fibs/frame4.html" frameBorder="0"></iframe>
+     <iframe id="seven" src="html/fibs/frame7.html" frameBorder="0"></iframe>
+     <iframe id="eight" src="html/fibs/frame8.html" frameBorder="0"></iframe>
+  </body>
+
+  <script>
+    var height = $(window).height();
+    var width = $(window).width();
+    var determiner = 10+10+20+30+50+80+130+210
+    var width_determiner = (width/determiner)
+    var height_determiner = (height/determiner)
+    var multiplier = (width_determiner)
+
+    function color(element, colorTone){
+      // Red tone
+      if (colorTone == 0){
+        var red = Math.floor((Math.random() * 100) + 75);
+        var green = Math.floor((Math.random() * 100) + 0);
+        var blue = Math.floor((Math.random() * 100) + 0);
+        var colour = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        element.style.backgroundColor = colour;
+      }
+      // Blue tone
+      if (colorTone == 1){
+        var red = Math.floor((Math.random() * 100) + 0);
+        var green = Math.floor((Math.random() * 100) + 0);
+        var blue = Math.floor((Math.random() * 100) + 145);
+        var colour = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        element.style.backgroundColor = colour;
+      }
+      // yellow tone
+      if (colorTone == 2){
+        var red = Math.floor((Math.random() * 100) + 145);
+        var green = Math.floor((Math.random() * 100) + 60);
+        var blue = Math.floor((Math.random() * 100) + 10);
+        var colour = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        element.style.backgroundColor = colour;
+      }
+    }
+
+    frames = document.getElementsByTagName('iframe')
+    for (var i = 0; i <= frames.length-1; i++){
+      var new_width = frames[i].offsetWidth * multiplier;
+      var new_height = frames[i].offsetHeight * multiplier;
+
+      frames[i].style.width = new_width + 'px';
+      frames[i].style.height = new_height + 'px';
+
+      var frame_6 = document.getElementById('six')
+      var positionInfo_6 = frame_6.getBoundingClientRect();
+      frame_6.style.bottom = -height +  "px"
+      frame_6.style.right =  0 + "px"
+      var randomcolor1 = Math.floor(Math.random() * 2);
+      color(frame_6, randomcolor1)
+
+
+      var frame_5 = document.getElementById('five')
+      var positionInfo_5 = frame_5.getBoundingClientRect();
+      frame_5.style.bottom = -height + "px"
+      frame_5.style.right =  0+positionInfo_6.width + "px"
+      var randomcolor2 = Math.floor(Math.random() * 2);
+      color(frame_5, randomcolor2)
+
+      var frame_1 = document.getElementById('one')
+      var positionInfo = frame_1.getBoundingClientRect();
+      frame_1.style.bottom = -height + positionInfo_5.height + "px"
+      frame_1.style.right = positionInfo_6.width  + "px"
+      var randomcolor3 = Math.floor(Math.random() * 2);
+      color(frame_1, randomcolor3)
+
+      var frame_2 = document.getElementById('two')
+      var positionInfo_2 = frame_2.getBoundingClientRect();
+      frame_2.style.bottom = -height + positionInfo_5.height + "px"
+      frame_2.style.right = positionInfo_6.width + positionInfo.width + "px"
+      var randomcolor4 = Math.floor(Math.random() * 2);
+      color(frame_2, randomcolor4)
+
+      var frame_3 = document.getElementById('three')
+      var positionInfo_3 = frame_3.getBoundingClientRect();
+      frame_3.style.bottom = -height + positionInfo_6.height - positionInfo_3.height + "px"
+      frame_3.style.right =  positionInfo_6.width - positionInfo_3.width + 2*positionInfo.width + "px"
+      var randomcolor5 = Math.floor(Math.random() * 2);
+      color(frame_3, randomcolor5)
+
+      var frame_4 = document.getElementById('four')
+      var positionInfo_4 = frame_4.getBoundingClientRect();
+      frame_4.style.bottom = -height + positionInfo_6.height - positionInfo_3.height - positionInfo.height + "px"
+      frame_4.style.right =  positionInfo_6.width - positionInfo_3.width + positionInfo_5.width - positionInfo.width + "px"
+      var randomcolor6 = Math.floor(Math.random() * 2);
+      color(frame_4, randomcolor6)
+
+      var frame_7 = document.getElementById('seven')
+      var positionInfo_7 = frame_7.getBoundingClientRect();
+      frame_7.style.bottom = -height + positionInfo_6.height + "px"
+      frame_7.style.right = 0 + "px"
+      var randomcolor7 = Math.floor(Math.random() * 2);
+      color(frame_7, randomcolor7)
+
+      var frame_8 = document.getElementById('eight')
+      var positionInfo_8 = frame_8.getBoundingClientRect();
+      frame_8.style.bottom = -height + "px"
+      frame_8.style.right = +positionInfo_6.width  + positionInfo_5.width+ "px"
+      var randomcolor8 = Math.floor(Math.random() * 2);
+      color(frame_8, randomcolor8)
+    }
+
+    setInterval(function() {
+      var frame_1 = document.getElementById('one')
+      var randomcolor1 = Math.floor(Math.random() * 2);
+      color(frame_1, randomcolor1)
+      var frame_2 = document.getElementById('two')
+      var randomcolor2 = Math.floor(Math.random() * 2);
+      color(frame_2, randomcolor2)
+      var frame_3 = document.getElementById('three')
+      var randomcolor3 = Math.floor(Math.random() * 2);
+      color(frame_3, randomcolor3)
+      var frame_4 = document.getElementById('four')
+      var randomcolor4 = Math.floor(Math.random() * 2);
+      color(frame_4, randomcolor4)
+      var frame_5 = document.getElementById('five')
+      var randomcolor5 = Math.floor(Math.random() * 2);
+      color(frame_5, randomcolor5)
+      var frame_6 = document.getElementById('six')
+      var randomcolor6 = Math.floor(Math.random() * 2);
+      color(frame_6, randomcolor6)
+      var frame_7 = document.getElementById('seven')
+      var randomcolor7 = Math.floor(Math.random() * 2);
+      color(frame_7, randomcolor7)
+      var frame_8 = document.getElementById('eight')
+      var randomcolor8 = Math.floor(Math.random() * 2);
+      color(frame_8, randomcolor8)
+    }, 1000);
+  </script>
+</html>

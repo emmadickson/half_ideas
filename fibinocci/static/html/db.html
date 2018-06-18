@@ -1,0 +1,63 @@
+ <html>
+  <head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even){background-color: #84b3ff}
+
+      th {
+        background-color: #465e84;
+        color: white;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <table id="botPosts">
+      <tr>
+        <th>Title</th>
+        <th>Post</th>
+        <th>Location</th>
+        <th>Time</th>
+      </tr>
+    </table>
+    <script>
+
+      jQuery.get('/raw_db', function(data) {
+
+        var entries = JSON.stringify(data)
+        entries = entries.split("\\")
+
+         // 1. posts the document up into lines and from individiaul lines into titles and posts
+         for (var i = 0; i < entries.length; i++){
+           if (entries[i].length > 17){
+             var limbs = entries[i].split("***");
+             var table = document.getElementById("botPosts");
+             var row = table.insertRow(1);
+             var cell1 = row.insertCell(0);
+             var cell2 = row.insertCell(1);
+             var cell3 = row.insertCell(2);
+             var cell4 = row.insertCell(3);
+             title = limbs[0].substring(1, limbs[0].length-1)
+             cell1.innerHTML = title;
+             cell2.innerHTML = limbs[1];
+             cell3.innerHTML = limbs[3];
+             cell4.innerHTML = limbs[4];
+           }
+         }
+      });
+
+    </script>
+  </body>
+</html>

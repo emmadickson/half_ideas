@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link id = "css" rel="stylesheet" href="../css/missed.css">
+  </head>
+
+  <body>
+    <header> <span id="locationText"> pittsburgh </span> <a href="/bots">< missed connections</a></header>
+    <h1 id="title"> </h1>
+    <div id="missed-connection"></div>
+    <blink><a id="hidden_text" href="/fibs">YOU MISSED SOMETHING</a></blink>
+    <div id="button"><button type="button" onclick="CreateMixedConnection()">Next</button></div>
+  </body>
+
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/mixup.js"></script>
+  <script type="text/javascript">
+  (function() {
+    var blinks = document.getElementsByTagName('blink');
+    var visibility = 'hidden';
+    window.setInterval(function() {
+      for (var i = blinks.length - 1; i >= 0; i--) {
+        blinks[i].style.visibility = visibility;
+      }
+      visibility = (visibility === 'visible') ? 'hidden' : 'visible';
+    }, 1000);
+  })();
+  </script>
+  <script>
+    // Constants
+    CRAIGSLIST_LOCATIONS = ["newyork","raleigh","pittsburgh"]
+    var count = 0;
+    var count2 = 0;
+    var beneathFlag = false;
+
+    // 1. Select title element and add event listener on click to mixup the post
+    var titleDomElement = document.getElementById("title");
+    titleDomElement.addEventListener("click", function(){
+      var post = document.getElementById("missed-connection");
+      sentences = CleanPost(post)
+      shuffle(sentences)
+      post.textContent = sentences.join(' ')
+      count = count + 1
+      var hidden = document.getElementById('hidden_text')
+      var color_value = 255 - count/4;
+      hidden.style.color = "rgb( 255," + color_value  + "," + color_value  + ")"
+    }, false);
+
+
+    // 2. Use set interval to Scramble the title text on hover
+    $("#title").hover(
+     function(){
+       var originalText = titleDomElement.textContent;
+       interval = setInterval(function(){
+         Scramble(originalText, titleDomElement)
+       }, 150);
+       Scramble(originalText, titleDomElement)
+     },
+
+     function(){
+       clearInterval(interval)
+     });
+
+     // 3. Use a set interval to constantly Scramble location text
+    var ScrambledLocation = document.getElementById("locationText");
+    var locationText = document.getElementById("locationText");
+    var originalLocation = locationText.textContent;
+    interval = setInterval(function(){
+     Scramble(originalLocation, ScrambledLocation)
+    }, 150);
+    interval = setInterval(function(){
+     var new_location = Math.floor((Math.random() * 2) + 0);
+     locationText.textContent = CRAIGSLIST_LOCATIONS[new_location]
+    }, 250);
+
+    // 4. Create the mixed connection
+     CreateMixedConnection()
+  </script>
+
+</html>

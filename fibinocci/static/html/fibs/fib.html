@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link id = "css" rel="stylesheet" href="../../css/fib.css">
+
+  </head>
+
+  <body>
+     <iframe id="six" src="html/fibs/frame6.html" frameBorder="0"></iframe>
+     <iframe id="five" src="html/fibs/frame5.html" frameBorder="0"></iframe>
+     <iframe id="one" src="html/fibs/frame1.html" frameBorder="0"></iframe>
+     <iframe id="two" name="two" src="html/fibs/frame2.html" frameBorder="0"></iframe>
+     <iframe id="three" src="html/fibs/frame3.html" frameBorder="0"></iframe>
+     <iframe id="four" src="html/fibs/frame4.html" frameBorder="0"></iframe>
+     <iframe id="seven" name="seven" src="html/fibs/frame7.html" frameBorder="0"></iframe>
+     <iframe id="eight" name="eight" src="html/fibs/frame8.html" frameBorder="0"></iframe>
+  </body>
+
+  <script>
+    function CreateCombinedWidth(frames){
+      var combinedWidth = 0;
+      for (var i = 0; i <= frames.length-1; i++){
+        combinedWidth = combinedWidth + frames[i].offsetWidth
+      }
+      return combinedWidth
+    }
+
+    function CreateNewSize(frames, i){
+      var newWidth = Math.ceil(frames[i].offsetWidth * multiplier);
+      var newHeight = Math.ceil(frames[i].offsetHeight * multiplier );
+      frames[i].style.width = newWidth + 'px';
+      frames[i].style.height = newHeight + 'px';
+      return frames[i]
+    }
+
+    function PositionFrameSix(){
+      var frame6 = document.getElementById('six')
+      positionInfo6 = frame6.getBoundingClientRect();
+      frame6.style.bottom = -height + "px"
+      frame6.style.right =  0 + "px"
+    }
+
+    function PositionFrameFive(){
+      var frame5 = document.getElementById('five')
+      positionInfo5 = frame5.getBoundingClientRect();
+      frame5.style.bottom = -height + "px"
+      frame5.style.right =  0 + positionInfo6.width + "px"
+    }
+
+    function PositionFrameOne(){
+      var frame1 = document.getElementById('one')
+      positionInfo = frame1.getBoundingClientRect();
+      frame1.style.bottom = -height + positionInfo5.height + "px"
+      frame1.style.right = positionInfo6.width + "px"
+    }
+
+    function PositionFrameTwo(){
+      var frame2 = document.getElementById('two')
+      positionInfo2 = frame2.getBoundingClientRect();
+      frame2.style.bottom = -height + positionInfo5.height + "px"
+      frame2.style.right = positionInfo6.width + positionInfo.width + "px"
+    }
+
+    function PositionFrameThree(){
+      var frame3 = document.getElementById('three')
+      positionInfo3 = frame3.getBoundingClientRect();
+      frame3.style.bottom = -height + positionInfo6.height - positionInfo3.height + "px"
+      frame3.style.right =  positionInfo6.width - positionInfo3.width + positionInfo.width + positionInfo2.width + "px"
+    }
+
+    function PositionFrameFour(){
+      var frame4 = document.getElementById('four')
+      positionInfo4 = frame4.getBoundingClientRect();
+      frame4.style.bottom = -height + positionInfo6.height - positionInfo3.height - positionInfo.height + "px"
+      frame4.style.right =  positionInfo6.width - positionInfo3.width + positionInfo5.width - positionInfo.width  + "px"
+    }
+
+    function PositionFrameSeven(){
+      var frame7 = document.getElementById('seven')
+      positionInfo7 = frame7.getBoundingClientRect();
+      frame7.style.bottom = -height + positionInfo6.height + "px"
+      frame7.style.right = 0 + "px"
+    }
+
+    function PositionFrameEight(){
+      var frame8 = document.getElementById('eight')
+      positionInfo8 = frame8.getBoundingClientRect();
+      frame8.style.bottom = -height + "px"
+      frame8.style.right = positionInfo6.width + positionInfo5.width + "px"
+    }
+
+    var height = $(window).height();
+    var width = $(window).width();
+    frames = document.getElementsByTagName('iframe')
+
+    var combinedWidth = CreateCombinedWidth(frames)
+    var width_determiner = Math.ceil(width/combinedWidth)
+    var height_determiner = Math.ceil(height/combinedWidth)
+    var multiplier = Math.ceil(width_determiner)
+
+    for (var i = 0; i <= frames.length-1; i++){
+      frames[i] = CreateNewSize(frames, i)
+      PositionFrameSix()
+      PositionFrameFive()
+      PositionFrameOne()
+      PositionFrameTwo()
+      PositionFrameThree()
+      PositionFrameFour()
+      PositionFrameSeven()
+      PositionFrameEight()
+    }
+
+  </script>
+</html>

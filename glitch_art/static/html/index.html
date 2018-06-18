@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link id = "css" rel="stylesheet" href="../css/missed.css">
+  </head>
+
+  <body>
+    <header> <img src="../images/phi.png" > </img> < <span id="locationText"> pittsburgh </span> <a href="/bots">< missed connections</a></header>
+    <h1 id="title"> </h1>
+    <div id="missed-connection"></div>
+    <div id="hidden" > Have you begun to see</div>
+    <div id="button"><button type="button" onclick="mixConnections()">Next</button></div>
+    <a id="hidden2" href="/fibs">beneath?</a>
+  </body>
+
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/constants.js"></script>
+  <script type="text/javascript" src="js/mixup.js"></script>
+  <script>
+   var titleDOM = document.getElementById("title");
+   var count = 0;
+   var count2 = 0;
+   titleDOM.addEventListener("click", mixup, false);
+   var titleScramble = document.getElementById("title");
+
+   var beneath_flag = false;
+   var hiddenLink = document.getElementById('hidden');
+   hiddenLink.addEventListener("click", function(){
+     beneath_flag = true;
+   });
+
+   $("#title").hover(
+     function(){
+       var originalText = titleScramble.textContent;
+       interval = setInterval(function(){scramble(originalText, titleScramble)}, 150);
+       scramble(originalText, titleScramble)
+     },
+     function(){
+       clearInterval(interval)
+     });
+
+     var locationScramble = document.getElementById("locationText");
+     var ogText = locationText.textContent;
+     interval = setInterval(function(){scramble(ogText, locationScramble)}, 150);
+     var text = locationText.textContent;
+     interval = setInterval(function(){
+       var newLocation = Math.floor((Math.random() * 2) + 0);
+       locationText.textContent = homeBases[newLocation]
+     }, 250);
+
+     mixConnections()
+  </script>
+
+</html>
