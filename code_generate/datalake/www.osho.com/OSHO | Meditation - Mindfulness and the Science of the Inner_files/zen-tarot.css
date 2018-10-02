@@ -1,0 +1,1271 @@
+/* Osho Zen Tarot Start */
+@font-face {
+    font-family: "Lato";
+    src: url(https://www.osho.com/sites/all/themes/osho/font/Lato-Reg.ttf) format("truetype");
+}
+.o_graybar
+{	background:url(../images/zen-tarot/graybar.png) repeat-x top #424242; float:left; width:100%;
+}
+.unlimitedright
+{	float:right;
+}
+.o_menus
+{	float:left; margin:0; padding:0;
+}
+.o_menus ul
+{	float:left; margin:0; padding:0; list-style:none;
+}
+.o_menus li
+{	float:left; margin:0; padding:0;
+}
+.o_menus li a
+{	float:left; background:url(../images/zen-tarot/menuline1.png) repeat-y right;
+	padding:10px 24px 0 22px; height:37px;
+}
+.o_menus li a.active
+{	background-color:#868686 !important;
+	background-image: none;
+}
+
+.unlimitedright
+{	float:right; color:#ffffff; font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; font-size:24px; text-decoration:underline;
+	padding-top:4px;
+}
+.unlimitedright:hover
+{	color:#ccc; text-decoration:none;
+}
+.o_menus li.last a
+{	background:none;
+}
+.section5
+{	float:left; width:100%; padding-top:20px;
+}
+.ozt_logo
+{	float:left; text-align:center; width:180px;
+}
+.ozt_menu
+{	float:right; width:877px;
+}
+.ozt_menu_lt
+{	float:left; background:url(../images/zen-tarot/ozt-menu-lt.png) no-repeat; width:10px; height:85px; margin-right:-10px; position:relative; z-index:2;
+}
+.ozt_menu_rt
+{	float:left; background:url(../images/zen-tarot/ozt-menu-rt.png) no-repeat; width:10px; height:85px; margin-left:-10px; position:relative; z-index:2;
+}
+.ozt_menu_mid
+{	float:left; background:url(../images/zen-tarot/ozt-menubg.png) repeat-x; width:100%; height:85px; margin-left:0; position:relative; z-index:1;
+}
+.ozt_menu_mid ul
+{	float:left; margin:0; padding:0 0 0 0; list-style:none;
+}
+.ozt_menu_mid li
+{	float:left; margin:0; padding:0;
+}
+.ozt_menu_mid li a
+{	float:left; border-right:1px solid #e5e5e5; height:72px; padding-top:13px; width:96px; text-align:center;
+}
+.ozt_menu_mid li.last a { border:0px; }
+.ozt_menu_mid li a:hover, .ozt_menu_mid li a.active
+{	background:url(../images/zen-tarot/ozt-menubg-a.png) repeat-x bottom;
+}
+.ozt_menu_mid li.w100 a {  width:100px; }
+.ozt_menu_mid li a span
+{	height:60px; display:block; margin:0 auto;
+}
+
+.ozt_menu_mid li#pcard1 a span{	width:55px; }
+.ozt_menu_mid li#pcard1 a:hover span, .ozt_menu_mid li#pcard1 a.active span{ }
+.ozt_menu_mid li#pcard2 a span{	width:48px; }
+.ozt_menu_mid li#pcard2 a:hover span, .ozt_menu_mid li#pcard2 a.active span{ }
+.ozt_menu_mid li#pcard3 a span{	width:47px; }
+.ozt_menu_mid li#pcard3 a:hover span, .ozt_menu_mid li#pcard3 a.active span{ }
+.ozt_menu_mid li#pcard4 a span{	width:77px; }
+.ozt_menu_mid li#pcard4 a:hover span, .ozt_menu_mid li#pcard4 a.active span{ }
+.ozt_menu_mid li#pcard5 a span{	width:86px; }
+.ozt_menu_mid li#pcard5 a:hover span, .ozt_menu_mid li#pcard5 a.active span{ }
+.ozt_menu_mid li#pcard6 a span{	width:48px; }
+.ozt_menu_mid li#pcard6 a:hover span, .ozt_menu_mid li#pcard6 a.active span{ }
+.ozt_menu_mid li#pcard7 a span{	width:95px; }
+.ozt_menu_mid li#pcard7 a:hover span, .ozt_menu_mid li#pcard7 a.active span{ }
+.ozt_menu_mid li#pcard8 a span{	width:61px; }
+.ozt_menu_mid li#pcard8 a:hover span, .ozt_menu_mid li#pcard8 a.active span{ }
+.ozt_menu_mid li#pcard9 a span{	width:53px; }
+.ozt_menu_mid li#pcard9 a:hover span, .ozt_menu_mid li#pcard9 a.active span{ }
+
+.ozt_bnav
+{	float:left; width:100%;
+}
+.ozt_bnav_lt
+{	float:left; background:url(../images/zen-tarot/ozt-lt.png) no-repeat; width:5px; height:50px; margin-right:-5px; position:relative; z-index:2;
+}
+.ozt_bnav_rt
+{	float:left; background:url(../images/zen-tarot/ozt-rt.png) no-repeat; width:5px; height:50px; margin-left:-5px; position:relative; z-index:2;
+}
+.ozt_bnav_mid
+{	float:left; background:url(../images/zen-tarot/ozt-redbar.png); width:100%; height:50px; margin-left:0; position:relative; z-index:1;
+}
+.ozt_bnav_mid ul
+{	float:left; margin:0; padding:0 0 0 0; list-style:none;
+}
+.ozt_bnav_mid li
+{	float:left; margin:0; padding:0 2px 0 0; background:url(../images/zen-tarot/ozt-sep.png) no-repeat right;
+}
+.ozt_bnav_mid li a
+{	float:left; height:43px; padding:7px 12px 0 12px; text-align:center;
+}
+.ozt_bnav_mid li a:hover, .ozt_bnav_mid li a.active
+{	background:url(../images/zen-tarot/ozt-act.png) repeat-x;
+}
+
+.ozt_redtab1{ float:left; height:41px; width:53px;}
+.ozt_redtab1:hover, .ozt_bnav_mid li a.active .ozt_redtab1{	}
+.ozt_redtab2{ float:left; height:41px; width:60px;}
+.ozt_redtab2:hover, .ozt_bnav_mid li a.active .ozt_redtab2{	}
+.ozt_redtab3{ float:left; height:41px; width:78px;}
+.ozt_redtab3:hover, .ozt_bnav_mid li a.active .ozt_redtab3{	}
+.ozt_redtab4{ float:left; height:41px; width:87px;}
+.ozt_redtab4:hover, .ozt_bnav_mid li a.active .ozt_redtab4{	}
+
+
+.ozt_sec2
+{	float:left; width:100%; padding:20px 0 15px 0;
+}
+.ozt_sec2_sub1
+{	text-align:center; padding-bottom:20px; float:left; width:100%; overflow:auto; 
+}
+.ozt_sec2_sub3
+{	padding:0 30px;
+}
+.ozt_sec2_sub3 p, .ozt_sec3_lt p
+{	font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; font-size:14px; margin:0 0 0 0; color:#333;
+}
+.ozt_sec2_sub3 h2, .ozt_sec3_lt h2
+{	font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; font-size:24px; color:#000; margin:0 0 0 0;
+}
+.ozt_forscroller
+{	height:470px; overflow:auto; margin-bottom:20px;
+}
+.ozt_forscroller h2
+{	margin-bottom:15px;
+}
+
+.ozt_card_thumb1
+{	margin:0 auto; width:580px; margin-top:40px; position:relative;
+}
+.sponsor_mn
+{	margin-right:10px; float:left; position:relative; width:70px;
+}
+.sponsor_dis
+{	left:3px; top:3px; z-index:2; width:64px; height:142px; background:url(../images/zen-tarot/cardbg1.png) no-repeat; position:absolute; float:left;
+}
+.sponsor
+{	float:left; width:70px; height:142px; z-index:1;
+	background:none; text-align:center;
+	position:relative; cursor:pointer;
+}
+.fornn .sponsor
+{	height:132px;
+}
+.ozt_card_thumb1 div img
+{	width:64px; height:94px; z-index:1; 
+}
+.ozt_card_thumb1 span
+{	display:block; font-size:9px; font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; line-height:11x; margin-top:2px;
+	text-transform:uppercase; height: 44px; overflow: hidden;
+}
+.ozt_card_thumb1 .sponsor_dis label
+{	text-shadow:1px 1px 1px #666; cursor:default;
+}
+.ozt_card_thumb1 label
+{	color:#FFF; position:absolute; top:30px; left:auto; z-index:2; width:64px; text-align:center; text-align:center;
+	font-size:28px; font-weight:bold; display:block; cursor:pointer; text-shadow:1px 1px 1px #000; left:0px;
+}
+/* Start Flip class */
+.sponsorFlip, .sponsorData{
+	/*  The sponsor div will be positioned absolutely with respect
+		to its parent .sponsor div and fill it in entirely */
+	position:relative;
+	margin:3px 0 0 3px; *margin-left:1px;
+	width:64px;
+	height:94px;
+	border:0;
+	background:#000;
+}
+/* Centering the logo image in the middle of the sponsorFlip div */
+.sponsorFlip img{	
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0px;
+}
+/* Hiding the .sponsorData div */
+.sponsorData{
+	display:none;
+}
+/* End Flip class */
+
+
+.ozt_card_thumb2
+{	width:100%; padding:55px 0 50px 0; float:left;
+}
+.ozt_card_thumb2 .sponsor
+{	text-align:center; z-index:1;
+	float:left; width:32px; height:72px;
+	position:relative; cursor:pointer; background:none;
+}
+.ozt_card_thumb2 .sponsor_mn
+{	float:left; position:relative; width:32px; margin-right:6px;
+}
+.ozt_card_thumb2 .sponsor_dis
+{	left:0px; top:0px; z-index:2; width:32px; height:72px; background:url(../images/zen-tarot/cardbg2.png) no-repeat; position:absolute; float:left;
+}
+.ozt_card_thumb2 div img
+{	z-index:1; width:30px; border:1px solid #b3b3b3;
+}
+.ozt_card_thumb2 span
+{	display:block; font-size:6px; font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; line-height:7px; margin-top:2px; cursor:pointer;
+	text-transform:uppercase;
+}
+.ozt_card_thumb2 .sponsor_dis label { cursor:default; }
+.ozt_card_thumb2 label
+{	color:#FFF; position:absolute; top:13px; left:auto; z-index:2; width:30px; text-align:center; text-align:center;
+	font-size:16px; line-height:20px; font-weight:bold; display:block; cursor:pointer; left:0px; text-shadow:1px 1px 1px #828282;
+}
+.ozt_card_thumb2 .sponsorFlip, .ozt_card_thumb2 .sponsorData{
+	position:relative; margin:0; padding:0px;
+	left:0px;
+	top:0px;
+	width:32px;
+	height:46px;
+	border:0;
+	background:#000;
+}
+
+.ozt_sec3
+{	float:left; width:100%; padding:10px 0 0 0;
+}
+.ozt_sec3_lt
+{	float:left; width:280px; padding-right:45px; padding-bottom:20px;
+}
+.ozt_sec3_mid
+{	float:left; background:url(../images/zen-tarot/ozt-cardbg.png) no-repeat; width:348px; height:511px; text-align:center; padding-top:11px;
+}
+.ozt_addto
+{	text-align:right;
+}
+.ozt_sec3_rt
+{	float:right; width:354px;
+}
+.ozt-tabs-lt
+{	float:left; background:url(../images/zen-tarot/ozt-tab-left.png) no-repeat; height:50px; width:5px; margin-right:-5px; position:relative; z-index:2;
+}
+.ozt-tabs-rt
+{	float:left; background:url(../images/zen-tarot/ozt-tab-right.png) no-repeat; height:50px; width:5px; margin-left:-5px; position:relative; z-index:2;
+}
+.ozt-tabs
+{	float:left; width:100%; background:url(../images/zen-tarot/ozt-tabsbg.png) repeat-x; height:50px; z-index:1; position:relative;
+}
+.ozt-tabs label
+{	float:left; width:117px; text-align:center; border-right:1px solid #e5e5e5; padding:7px 0 0 0px; height:42px; cursor:pointer;
+}
+.ozt-tabs label:hover, .ozt-tabs label.active
+{	background:url(../images/zen-tarot/ozt-tabsbg-act.png) repeat-x;
+}
+
+.ozt-tabs label .ozt-tabs1{	width:64px; height:41px; display:block; margin:0 auto;}
+.ozt-tabs label:hover .ozt-tabs1, .ozt-tabs label.active span.ozt-tabs1{ }
+.ozt-tabs label .ozt-tabs2{	width:66px; height:41px; display:block; margin:0 auto;}
+.ozt-tabs label:hover .ozt-tabs2, .ozt-tabs label.active span.ozt-tabs2{ }
+.ozt-tabs label .ozt-tabs3{	width:86px; height:41px; display:block; margin:0 auto;}
+.ozt-tabs label:hover .ozt-tabs3, .ozt-tabs label.active span.ozt-tabs3{ }
+
+.ozt_sec3_rttxt
+{	padding:25px 0 0 3px;
+}
+.ozt_sec3_rttxt p
+{	font-size:18px; font-family:  Lato, 'Open Sans Condensed', Lato, sans-serif, Arial, Helvetica; margin:0 0 0 0;
+}
+.forall
+{	width:1010px; margin-left:50px; height:440px; overflow:auto; float:left; position:relative;
+}
+.forall .sponsor
+{	height:112px; margin-right:12px;
+}
+.ozt_sec3_lt2
+{	float:left; width:305px; padding-right:20px;
+}
+.ozt_sec3_lt2 .sponsor
+{	height:55px; margin-right:9px;
+}
+.forflying .ozt_card_thumb2 .sponsor
+{	margin-right:9px;
+}
+.ozt_sec3_lt2 .ozt_card_thumb2 
+{	margin:10px 0 0 0; height:490px; overflow:auto; padding:0; float:left; position:relative;
+}
+
+.topcards
+{	position:relative; height:200px; width:697px; margin:0 auto; text-align:left;
+	color: #333333;
+    font-family:  Lato,  'Open Sans Condensed',Lato,sans-serif,Arial,Helvetica;
+    font-size: 14px;
+}
+.topcards span
+{	color: #000;
+    font-size: 18px;
+}
+.topcards img
+{	cursor:pointer; position:absolute; left:0px; top:0px; z-index:1;
+}
+.topcards img#tcard2  {	z-index:2;  }
+.topcards img#tcard3  {	z-index:3;  }
+.topcards img#tcard4  {	z-index:4;  }
+.topcards img#tcard5  {	z-index:5;  }
+.topcards img#tcard6  {	z-index:6;  }
+.topcards img#tcard7  {	z-index:7;  }
+.topcards img#tcard8  {	z-index:8;  }
+.topcards img#tcard9  {	z-index:9;  }
+.topcards img#tcard10 {	z-index:10; }
+.topcards img#tcard11 {	z-index:11; }
+.topcards img#tcard12 {	z-index:12; }
+.topcards img#tcard13 {	z-index:13; }
+.topcards img#tcard14 {	z-index:14; }
+.topcards img#tcard15 {	z-index:15; }
+.topcards img#tcard16 {	z-index:16; }
+.topcards img#tcard17 {	z-index:17; }
+.topcards img#tcard18 {	z-index:18; }
+.topcards img#tcard19 {	z-index:19; }
+.topcards img#tcard20 {	z-index:20; }
+.ftztmn .sponsor_mn
+{	margin-right:15px;
+}
+.ozt_mitxt1
+{	position:absolute; left:160px; top:35px; font-size:13px; font-weight:bold; z-index:9999; float:left;
+}
+.ozt_mitxt2
+{	font-size: 13px; font-weight: bold; left: -15px; position: absolute; top: 659px; width: 90px; z-index:9999; float:left;
+}
+.ozt_mitxt3
+{	font-size: 13px; font-weight: bold; right: -15px; position: absolute; top: 659px; width: 86px; z-index:9999; float:left;
+}
+.ozt_mitxt4
+{	font-size: 13px; font-weight: bold; position: absolute; right: 38px; top: 929px; width: 156px; z-index:9999; float:left;
+}
+.ozt_card_thumb2 .ozt_mitxt1
+{	left:80px; top:15px; font-size:11px;
+}
+.ozt_card_thumb2 .ozt_mitxt2
+{	left:-25px; top:350px; font-size:11px; width:60px;
+}
+.ozt_card_thumb2 .ozt_mitxt3
+{	right:-55px; top:350px; font-size:11px; text-align:left;
+}
+.ozt_card_thumb2 .ozt_mitxt4
+{	left:-23px; top:500px; font-size:11px; text-align:center;
+}
+.menumn .submenu { display:none !important; }
+
+.favoritelist
+{	width:650px; margin:10px auto; border:1px solid #CCC; border-bottom:0px;
+}
+.favoritelist ul
+{	margin:0; padding:0; list-style:none;
+}
+.favoritelist ul li
+{	margin:0; padding:0; list-style:none; border-bottom:1px solid #CCC; text-align:left;
+	padding:5px 10px; background:#f5f5f5; font-size:13px; float:left; width:97%;
+}
+.favoritelist ul li:hover
+{	background:#FFF;
+}
+.favoritelist ul li img
+{	padding-right:10px; vertical-align:middle; *float:left;
+}
+.favoritelist ul li a
+{	font-size:13px; font-weight:bold;
+}
+.favoritelist ul li img.oztcross
+{	padding: 0; margin:22px 5px 0 0; *float:right;
+}
+.favoritelist ul li span.fav-title
+{	text-transform:uppercase; font-weight:bold; float:left; margin-top:18px;
+}
+.backtxt{ height:19px; width:72px; display:block; margin:0 0 0 auto;}
+.backtxt:hover{}
+.addtofav{ height:20px; width:98px; display:block; margin:10px 0 0 0;}
+.addtofav:hover{}
+
+/*en*/
+.en .backtxt{	background:url(../images/zen-tarot/en/reading.png) no-repeat;}
+.en .backtxt:hover{	background:url(../images/zen-tarot/en/reading.png) no-repeat bottom;}
+.en .addtofav{	background:url(../images/zen-tarot/en/add-to-favorites1.png) no-repeat;}
+.en .addtofav:hover{	background:url(../images/zen-tarot/en/add-to-favorites1.png) no-repeat bottom;}
+
+.en .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat 0 0; }
+.en .ozt-tabs label:hover .ozt-tabs1, .en .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat 0 bottom;}
+.en .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat -119px 0; }
+.en .ozt-tabs label:hover .ozt-tabs2, .en .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat -119px bottom;}
+.en .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.en .ozt-tabs label:hover .ozt-tabs3, .en .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/en/ozt-tabs.png) no-repeat -223px bottom;}
+
+.en .ozt_redtab1{ background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat 0 bottom;}
+.en .ozt_redtab1:hover, .en .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat 0 0px;}
+.en .ozt_redtab2{ background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -98px bottom;}
+.en .ozt_redtab2:hover, .en .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -98px 0px;}
+.en .ozt_redtab3{ background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -188px bottom;}
+.en .ozt_redtab3:hover, .en .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -188px 0px;}
+.en .ozt_redtab4{ background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -282px bottom;}
+.en .ozt_redtab4:hover, .en .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/en/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.en .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/en/ozt-cardp-1.png) no-repeat;}
+.en .ozt_menu_mid li#pcard1 a:hover span, .en .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-1.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/en/ozt-cardp-2.png) no-repeat;}
+.en .ozt_menu_mid li#pcard2 a:hover span, .en .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-2.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/en/ozt-cardp-3.png) no-repeat;}
+.en .ozt_menu_mid li#pcard3 a:hover span, .en .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-3.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/en/ozt-cardp-4.png) no-repeat;}
+.en .ozt_menu_mid li#pcard4 a:hover span, .en .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-4.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/en/ozt-cardp-5.png) no-repeat;}
+.en .ozt_menu_mid li#pcard5 a:hover span, .en .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-5.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/en/ozt-cardp-6.png) no-repeat;}
+.en .ozt_menu_mid li#pcard6 a:hover span, .en .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-6.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/en/ozt-cardp-7.png) no-repeat;}
+.en .ozt_menu_mid li#pcard7 a:hover span, .en .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-7.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/en/ozt-cardp-8.png) no-repeat;}
+.en .ozt_menu_mid li#pcard8 a:hover span, .en .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-8.png) no-repeat 0 -69px;}
+.en .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/en/ozt-cardp-9.png) no-repeat;}
+.en .ozt_menu_mid li#pcard9 a:hover span, .en .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/en/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*ch*/
+.ch .backtxt{	background:url(../images/zen-tarot/ch/reading.png) no-repeat;}
+.ch .backtxt:hover{	background:url(../images/zen-tarot/ch/reading.png) no-repeat bottom;}
+.ch .addtofav{	background:url(../images/zen-tarot/ch/add-to-favorites1.png) no-repeat;}
+.ch .addtofav:hover{	background:url(../images/zen-tarot/ch/add-to-favorites1.png) no-repeat bottom;}
+
+.ch .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat 0 0; }
+.ch .ozt-tabs label:hover .ozt-tabs1, .ch .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat 0 bottom;}
+.ch .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat -119px 0; }
+.ch .ozt-tabs label:hover .ozt-tabs2, .ch .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat -119px bottom;}
+.ch .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.ch .ozt-tabs label:hover .ozt-tabs3, .ch .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/ch/ozt-tabs.png) no-repeat -223px bottom;}
+
+.ch .ozt_redtab1{ background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat 0 bottom;}
+.ch .ozt_redtab1:hover, .ch .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat 0 0px;}
+.ch .ozt_redtab2{ background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -98px bottom;}
+.ch .ozt_redtab2:hover, .ch .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -98px 0px;}
+.ch .ozt_redtab3{ background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -188px bottom;}
+.ch .ozt_redtab3:hover, .ch .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -188px 0px;}
+.ch .ozt_redtab4{ background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -282px bottom;}
+.ch .ozt_redtab4:hover, .ch .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/ch/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.ch .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/ch/ozt-cardp-1.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard1 a:hover span, .ch .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-1.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/ch/ozt-cardp-2.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard2 a:hover span, .ch .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-2.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/ch/ozt-cardp-3.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard3 a:hover span, .ch .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-3.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/ch/ozt-cardp-4.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard4 a:hover span, .ch .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-4.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/ch/ozt-cardp-5.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard5 a:hover span, .ch .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-5.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/ch/ozt-cardp-6.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard6 a:hover span, .ch .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-6.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/ch/ozt-cardp-7.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard7 a:hover span, .ch .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-7.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/ch/ozt-cardp-8.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard8 a:hover span, .ch .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-8.png) no-repeat 0 -69px;}
+.ch .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/ch/ozt-cardp-9.png) no-repeat;}
+.ch .ozt_menu_mid li#pcard9 a:hover span, .ch .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/ch/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*nl*/
+.nl .backtxt{	background:url(../images/zen-tarot/nl/reading.png) no-repeat;}
+.nl .backtxt:hover{	background:url(../images/zen-tarot/nl/reading.png) no-repeat bottom;}
+.nl .addtofav{	background:url(../images/zen-tarot/nl/add-to-favorites1.png) no-repeat; width:135px;}
+.nl .addtofav:hover{	background:url(../images/zen-tarot/nl/add-to-favorites1.png) no-repeat bottom left;}
+
+.nl .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat 0 0; }
+.nl .ozt-tabs label:hover .ozt-tabs1, .nl .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat 0 bottom;}
+.nl .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat -119px 0; }
+.nl .ozt-tabs label:hover .ozt-tabs2, .nl .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat -119px bottom;}
+.nl .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto; width:110px;}
+.nl .ozt-tabs label:hover .ozt-tabs3, .nl .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/nl/ozt-tabs.png) no-repeat -223px bottom;}
+
+.nl .ozt_redtab1{ background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat 0 bottom;}
+.nl .ozt_redtab1:hover, .nl .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat 0 0px;}
+.nl .ozt_redtab2{ background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -90px bottom; width: 72px;}
+.nl .ozt_redtab2:hover, .nl .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -90px 0px;}
+.nl .ozt_redtab3{ background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -188px bottom;}
+.nl .ozt_redtab3:hover, .nl .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -188px 0px;}
+.nl .ozt_redtab4{ background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -271px bottom; width:178px;}
+.nl .ozt_redtab4:hover, .nl .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/nl/ozt-red-buttons.png) no-repeat -271px 0px;}
+
+.nl .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/nl/ozt-cardp-1.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard1 a:hover span, .nl .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-1.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/nl/ozt-cardp-2.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard2 a:hover span, .nl .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-2.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard3 a span{	width:59px; background:url(../images/zen-tarot/nl/ozt-cardp-3.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard3 a:hover span, .nl .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-3.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/nl/ozt-cardp-4.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard4 a:hover span, .nl .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-4.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/nl/ozt-cardp-5.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard5 a:hover span, .nl .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-5.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/nl/ozt-cardp-6.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard6 a:hover span, .nl .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-6.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/nl/ozt-cardp-7.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard7 a:hover span, .nl .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-7.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/nl/ozt-cardp-8.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard8 a:hover span, .nl .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-8.png) no-repeat 0 -69px;}
+.nl .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/nl/ozt-cardp-9.png) no-repeat;}
+.nl .ozt_menu_mid li#pcard9 a:hover span, .nl .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/nl/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) 
+{.nl .ozt_menu_mid li a, .nl .ozt_menu_mid li.w100 a{ padding-right:7px; }
+}
+.nl .ozt_bnav_mid li a{padding:7px 10px 0;}
+@media screen and (max-width: 479px) 
+{.nl .ozt_bnav_mid li a{padding:7px 0px 0;}
+}
+
+/*fr*/
+.fr .backtxt{	background:url(../images/zen-tarot/fr/reading.png) no-repeat;}
+.fr .backtxt:hover{	background:url(../images/zen-tarot/fr/reading.png) no-repeat bottom;}
+.fr .addtofav{	background:url(../images/zen-tarot/fr/add-to-favorites1.png) no-repeat; width:110px;}
+.fr .addtofav:hover{	background:url(../images/zen-tarot/fr/add-to-favorites1.png) no-repeat bottom left;}
+
+.fr .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat 0 0; }
+.fr .ozt-tabs label:hover .ozt-tabs1, .fr .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat 0 bottom;}
+.fr .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat -119px 0; }
+.fr .ozt-tabs label:hover .ozt-tabs2, .fr .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat -119px bottom;}
+.fr .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto; width:90px;}
+.fr .ozt-tabs label:hover .ozt-tabs3, .fr .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/fr/ozt-tabs.png) no-repeat -223px bottom;}
+
+.fr .ozt_redtab1{ background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat 0 bottom;}
+.fr .ozt_redtab1:hover, .fr .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat 0 0px;}
+.fr .ozt_redtab2{ background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -98px bottom; width:72px;}
+.fr .ozt_redtab2:hover, .fr .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -98px 0px;}
+.fr .ozt_redtab3{ background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -188px bottom; width:80px;}
+.fr .ozt_redtab3:hover, .fr .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -188px 0px;}
+.fr .ozt_redtab4{ background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -282px bottom; width:104px;}
+.fr .ozt_redtab4:hover, .fr .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/fr/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.fr .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/fr/ozt-cardp-1.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard1 a:hover span, .fr .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-1.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/fr/ozt-cardp-2.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard2 a:hover span, .fr .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-2.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/fr/ozt-cardp-3.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard3 a:hover span, .fr .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-3.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/fr/ozt-cardp-4.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard4 a:hover span, .fr .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-4.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/fr/ozt-cardp-5.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard5 a:hover span, .fr .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-5.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/fr/ozt-cardp-6.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard6 a:hover span, .fr .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-6.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/fr/ozt-cardp-7.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard7 a:hover span, .fr .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-7.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/fr/ozt-cardp-8.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard8 a:hover span, .fr .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-8.png) no-repeat 0 -69px;}
+.fr .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/fr/ozt-cardp-9.png) no-repeat;}
+.fr .ozt_menu_mid li#pcard9 a:hover span, .fr .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/fr/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*de*/
+.de .backtxt{	background:url(../images/zen-tarot/de/reading.png) no-repeat;}
+.de .backtxt:hover{	background:url(../images/zen-tarot/de/reading.png) no-repeat bottom;}
+.de .addtofav{	background:url(../images/zen-tarot/de/add-to-favorites1.png) no-repeat; width:138px;}
+.de .addtofav:hover{	background:url(../images/zen-tarot/de/add-to-favorites1.png) no-repeat bottom left;}
+
+.de .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat 0 0; }
+.de .ozt-tabs label:hover .ozt-tabs1, .de .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat 0 bottom;}
+.de .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat -119px 0; }
+.de .ozt-tabs label:hover .ozt-tabs2, .de .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat -119px bottom;}
+.de .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto; width:88px;}
+.de .ozt-tabs label:hover .ozt-tabs3, .de .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/de/ozt-tabs.png) no-repeat -223px bottom;}
+
+.de .ozt_redtab1{ background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat 0 bottom;}
+.de .ozt_redtab1:hover, .de .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat 0 0px;}
+.de .ozt_redtab2{ background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -71px bottom; width:162px;}
+.de .ozt_redtab2:hover, .de .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -71px 0px; width:162px;}
+.de .ozt_redtab3{ background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -250px bottom; width:151px;}
+.de .ozt_redtab3:hover, .de .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -250px 0px; width:151px;}
+.de .ozt_redtab4{ background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -418px bottom; width:115px;}
+.de .ozt_redtab4:hover, .de .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/de/ozt-red-buttons.png) no-repeat -418px 0px; width:115px;}
+
+.de .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/de/ozt-cardp-1.png) no-repeat;}
+.de .ozt_menu_mid li#pcard1 a:hover span, .de .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-1.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/de/ozt-cardp-2.png) no-repeat;}
+.de .ozt_menu_mid li#pcard2 a:hover span, .de .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-2.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/de/ozt-cardp-3.png) no-repeat;}
+.de .ozt_menu_mid li#pcard3 a:hover span, .de .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-3.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/de/ozt-cardp-4.png) no-repeat;}
+.de .ozt_menu_mid li#pcard4 a:hover span, .de .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-4.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/de/ozt-cardp-5.png) no-repeat; height:62px;}
+.de .ozt_menu_mid li#pcard5 a:hover span, .de .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-5.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/de/ozt-cardp-6.png) no-repeat;}
+.de .ozt_menu_mid li#pcard6 a:hover span, .de .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-6.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/de/ozt-cardp-7.png) no-repeat;}
+.de .ozt_menu_mid li#pcard7 a:hover span, .de .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-7.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/de/ozt-cardp-8.png) no-repeat;}
+.de .ozt_menu_mid li#pcard8 a:hover span, .de .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-8.png) no-repeat 0 -69px;}
+.de .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/de/ozt-cardp-9.png) no-repeat;}
+.de .ozt_menu_mid li#pcard9 a:hover span, .de .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/de/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*el*/
+.el .backtxt{	background:url(../images/zen-tarot/el/reading.png) no-repeat; width:82px;}
+.el .backtxt:hover{	background:url(../images/zen-tarot/el/reading.png) no-repeat bottom;}
+.el .addtofav{	background:url(../images/zen-tarot/el/add-to-favorites1.png) no-repeat; width:164px;}
+.el .addtofav:hover{	background:url(../images/zen-tarot/el/add-to-favorites1.png) no-repeat bottom left;}
+
+.el .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat 0 0; }
+.el .ozt-tabs label:hover .ozt-tabs1, .el .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat 0 bottom;}
+.el .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat -119px 0; }
+.el .ozt-tabs label:hover .ozt-tabs2, .el .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat -119px bottom;}
+.el .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.el .ozt-tabs label:hover .ozt-tabs3, .el .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/el/ozt-tabs.png) no-repeat -223px bottom;}
+
+.el .ozt_redtab1{ background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat 0 bottom; width:56px;}
+.el .ozt_redtab1:hover, .el .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat 0 0px;}
+.el .ozt_redtab2{ background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -98px bottom; width:86px;}
+.el .ozt_redtab2:hover, .el .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -98px 0px;}
+.el .ozt_redtab3{ background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -188px bottom; width:94px;}
+.el .ozt_redtab3:hover, .el .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -188px 0px;}
+.el .ozt_redtab4{ background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -282px bottom; width:110px;}
+.el .ozt_redtab4:hover, .el .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/el/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.el .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/el/ozt-cardp-1.png) no-repeat;}
+.el .ozt_menu_mid li#pcard1 a:hover span, .el .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-1.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/el/ozt-cardp-2.png) no-repeat;}
+.el .ozt_menu_mid li#pcard2 a:hover span, .el .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-2.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/el/ozt-cardp-3.png) no-repeat;}
+.el .ozt_menu_mid li#pcard3 a:hover span, .el .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-3.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/el/ozt-cardp-4.png) no-repeat;}
+.el .ozt_menu_mid li#pcard4 a:hover span, .el .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-4.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/el/ozt-cardp-5.png) no-repeat; height:62px;}
+.el .ozt_menu_mid li#pcard5 a:hover span, .el .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-5.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/el/ozt-cardp-6.png) no-repeat;}
+.el .ozt_menu_mid li#pcard6 a:hover span, .el .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-6.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/el/ozt-cardp-7.png) no-repeat;}
+.el .ozt_menu_mid li#pcard7 a:hover span, .el .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-7.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/el/ozt-cardp-8.png) no-repeat;}
+.el .ozt_menu_mid li#pcard8 a:hover span, .el .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-8.png) no-repeat 0 -69px;}
+.el .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/el/ozt-cardp-9.png) no-repeat;}
+.el .ozt_menu_mid li#pcard9 a:hover span, .el .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/el/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*hi*/
+.hi .backtxt{	background:url(../images/zen-tarot/hi/reading.png) no-repeat;}
+.hi .backtxt:hover{	background:url(../images/zen-tarot/hi/reading.png) no-repeat bottom;}
+.hi .addtofav{	background:url(../images/zen-tarot/hi/add-to-favorites1.png) no-repeat;}
+.hi .addtofav:hover{	background:url(../images/zen-tarot/hi/add-to-favorites1.png) no-repeat bottom left;}
+
+.hi .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat 0 0; }
+.hi .ozt-tabs label:hover .ozt-tabs1, .hi .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat 0 bottom;}
+.hi .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat -119px 0; }
+.hi .ozt-tabs label:hover .ozt-tabs2, .hi .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat -119px bottom;}
+.hi .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.hi .ozt-tabs label:hover .ozt-tabs3, .hi .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/hi/ozt-tabs.png) no-repeat -223px bottom;}
+
+.hi .ozt_redtab1{ background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat 0 bottom;}
+.hi .ozt_redtab1:hover, .hi .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat 0 0px;}
+.hi .ozt_redtab2{ background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -98px bottom;}
+.hi .ozt_redtab2:hover, .hi .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -98px 0px;}
+.hi .ozt_redtab3{ background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -188px bottom;}
+.hi .ozt_redtab3:hover, .hi .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -188px 0px;}
+.hi .ozt_redtab4{ background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -282px bottom;}
+.hi .ozt_redtab4:hover, .hi .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/hi/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.hi .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/hi/ozt-cardp-1.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard1 a:hover span, .hi .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-1.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard2 a span{	width:52px; background:url(../images/zen-tarot/hi/ozt-cardp-2.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard2 a:hover span, .hi .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-2.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/hi/ozt-cardp-3.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard3 a:hover span, .hi .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-3.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/hi/ozt-cardp-4.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard4 a:hover span, .hi .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-4.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/hi/ozt-cardp-5.png) no-repeat; height:62px;}
+.hi .ozt_menu_mid li#pcard5 a:hover span, .hi .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-5.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/hi/ozt-cardp-6.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard6 a:hover span, .hi .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-6.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/hi/ozt-cardp-7.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard7 a:hover span, .hi .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-7.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/hi/ozt-cardp-8.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard8 a:hover span, .hi .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-8.png) no-repeat 0 -69px;}
+.hi .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/hi/ozt-cardp-9.png) no-repeat;}
+.hi .ozt_menu_mid li#pcard9 a:hover span, .hi .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/hi/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*it*/
+.it .backtxt{	background:url(../images/zen-tarot/it/reading.png) no-repeat;}
+.it .backtxt:hover{	background:url(../images/zen-tarot/it/reading.png) no-repeat bottom;}
+.it .addtofav{	background:url(../images/zen-tarot/it/add-to-favorites1.png) no-repeat; width:116px;}
+.it .addtofav:hover{	background:url(../images/zen-tarot/it/add-to-favorites1.png) no-repeat bottom left;}
+
+.it .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat 0 0; }
+.it .ozt-tabs label:hover .ozt-tabs1, .it .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat 0 bottom;}
+.it .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat -119px 0; }
+.it .ozt-tabs label:hover .ozt-tabs2, .it .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat -119px bottom;}
+.it .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.it .ozt-tabs label:hover .ozt-tabs3, .it .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/it/ozt-tabs.png) no-repeat -223px bottom;}
+
+.it .ozt_redtab1{ background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat 0 bottom; width:58px;}
+.it .ozt_redtab1:hover, .it .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat 0 0px;}
+.it .ozt_redtab2{ background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -98px bottom; width:62px;}
+.it .ozt_redtab2:hover, .it .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -98px 0px;}
+.it .ozt_redtab3{ background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -188px bottom; width:94px;}
+.it .ozt_redtab3:hover, .it .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -188px 0px;}
+.it .ozt_redtab4{ background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -302px bottom; width:94px;}
+.it .ozt_redtab4:hover, .it .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/it/ozt-red-buttons.png) no-repeat -302px 0px;}
+
+.it .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/it/ozt-cardp-1.png) no-repeat;}
+.it .ozt_menu_mid li#pcard1 a:hover span, .it .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-1.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/it/ozt-cardp-2.png) no-repeat;}
+.it .ozt_menu_mid li#pcard2 a:hover span, .it .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-2.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/it/ozt-cardp-3.png) no-repeat;}
+.it .ozt_menu_mid li#pcard3 a:hover span, .it .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-3.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/it/ozt-cardp-4.png) no-repeat;}
+.it .ozt_menu_mid li#pcard4 a:hover span, .it .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-4.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/it/ozt-cardp-5.png) no-repeat;}
+.it .ozt_menu_mid li#pcard5 a:hover span, .it .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-5.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/it/ozt-cardp-6.png) no-repeat;}
+.it .ozt_menu_mid li#pcard6 a:hover span, .it .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-6.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/it/ozt-cardp-7.png) no-repeat;}
+.it .ozt_menu_mid li#pcard7 a:hover span, .it .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-7.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/it/ozt-cardp-8.png) no-repeat;}
+.it .ozt_menu_mid li#pcard8 a:hover span, .it .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-8.png) no-repeat 0 -69px;}
+.it .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/it/ozt-cardp-9.png) no-repeat;}
+.it .ozt_menu_mid li#pcard9 a:hover span, .it .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/it/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*ja*/
+.ja .backtxt{	background:url(../images/zen-tarot/ja/reading.png) no-repeat;}
+.ja .backtxt:hover{	background:url(../images/zen-tarot/ja/reading.png) no-repeat bottom;}
+.ja .addtofav{	background:url(../images/zen-tarot/ja/add-to-favorites1.png) no-repeat;}
+.ja .addtofav:hover{	background:url(../images/zen-tarot/ja/add-to-favorites1.png) no-repeat bottom left;}
+
+.ja .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat 0 0; }
+.ja .ozt-tabs label:hover .ozt-tabs1, .ja .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat 0 bottom;}
+.ja .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -119px 0; }
+.ja .ozt-tabs label:hover .ozt-tabs2, .ja .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -119px bottom;}
+.ja .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.ja .ozt-tabs label:hover .ozt-tabs3, .ja .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -223px bottom;}
+
+.ja .ozt_redtab1{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat 0 bottom;}
+.ja .ozt_redtab1:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat 0 0px;}
+.ja .ozt_redtab2{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -98px bottom;}
+.ja .ozt_redtab2:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -98px 0px;}
+.ja .ozt_redtab3{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -188px bottom;}
+.ja .ozt_redtab3:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -188px 0px;}
+.ja .ozt_redtab4{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -282px bottom;}
+.ja .ozt_redtab4:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.ja .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/ja/ozt-cardp-1.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard1 a:hover span, .ja .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-1.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/ja/ozt-cardp-2.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard2 a:hover span, .ja .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-2.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/ja/ozt-cardp-3.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard3 a:hover span, .ja .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-3.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/ja/ozt-cardp-4.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard4 a:hover span, .ja .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-4.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/ja/ozt-cardp-5.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard5 a:hover span, .ja .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-5.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/ja/ozt-cardp-6.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard6 a:hover span, .ja .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-6.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/ja/ozt-cardp-7.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard7 a:hover span, .ja .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-7.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/ja/ozt-cardp-8.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard8 a:hover span, .ja .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-8.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/ja/ozt-cardp-9.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard9 a:hover span, .ja .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*ja*/
+.ja .backtxt{	background:url(../images/zen-tarot/ja/reading.png) no-repeat;}
+.ja .backtxt:hover{	background:url(../images/zen-tarot/ja/reading.png) no-repeat bottom;}
+.ja .addtofav{	background:url(../images/zen-tarot/ja/add-to-favorites1.png) no-repeat;}
+.ja .addtofav:hover{	background:url(../images/zen-tarot/ja/add-to-favorites1.png) no-repeat bottom left;}
+
+.ja .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat 0 0; }
+.ja .ozt-tabs label:hover .ozt-tabs1, .ja .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat 0 bottom;}
+.ja .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -119px 0; }
+.ja .ozt-tabs label:hover .ozt-tabs2, .ja .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -119px bottom;}
+.ja .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.ja .ozt-tabs label:hover .ozt-tabs3, .ja .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/ja/ozt-tabs.png) no-repeat -223px bottom;}
+
+.ja .ozt_redtab1{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat 0 bottom;}
+.ja .ozt_redtab1:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat 0 0px;}
+.ja .ozt_redtab2{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -98px bottom; width:52px;}
+.ja .ozt_redtab2:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -98px 0px;}
+.ja .ozt_redtab3{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -153px bottom; width: 170px;}
+.ja .ozt_redtab3:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -153px 0px;}
+.ja .ozt_redtab4{ background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -334px bottom; width:70px;}
+.ja .ozt_redtab4:hover, .ja .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/ja/ozt-red-buttons.png) no-repeat -334px 0px;}
+
+.ja .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/ja/ozt-cardp-1.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard1 a:hover span, .ja .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-1.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/ja/ozt-cardp-2.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard2 a:hover span, .ja .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-2.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/ja/ozt-cardp-3.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard3 a:hover span, .ja .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-3.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/ja/ozt-cardp-4.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard4 a:hover span, .ja .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-4.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/ja/ozt-cardp-5.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard5 a:hover span, .ja .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-5.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/ja/ozt-cardp-6.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard6 a:hover span, .ja .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-6.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/ja/ozt-cardp-7.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard7 a:hover span, .ja .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-7.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/ja/ozt-cardp-8.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard8 a:hover span, .ja .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-8.png) no-repeat 0 -69px;}
+.ja .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/ja/ozt-cardp-9.png) no-repeat;}
+.ja .ozt_menu_mid li#pcard9 a:hover span, .ja .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/ja/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*ko*/
+.ko .backtxt{	background:url(../images/zen-tarot/ko/reading.png) no-repeat;}
+.ko .backtxt:hover{	background:url(../images/zen-tarot/ko/reading.png) no-repeat bottom;}
+.ko .addtofav{	background:url(../images/zen-tarot/ko/add-to-favorites1.png) no-repeat;}
+.ko .addtofav:hover{	background:url(../images/zen-tarot/ko/add-to-favorites1.png) no-repeat bottom left;}
+
+.ko .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat 0 0; }
+.ko .ozt-tabs label:hover .ozt-tabs1, .ko .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat 0 bottom;}
+.ko .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat -119px 0; }
+.ko .ozt-tabs label:hover .ozt-tabs2, .ko .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat -119px bottom;}
+.ko .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.ko .ozt-tabs label:hover .ozt-tabs3, .ko .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/ko/ozt-tabs.png) no-repeat -223px bottom;}
+
+.ko .ozt_redtab1{ background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat 0 bottom;}
+.ko .ozt_redtab1:hover, .ko .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat 0 0px;}
+.ko .ozt_redtab2{ background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -98px bottom;}
+.ko .ozt_redtab2:hover, .ko .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -98px 0px;}
+.ko .ozt_redtab3{ background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -188px bottom;}
+.ko .ozt_redtab3:hover, .ko .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -188px 0px;}
+.ko .ozt_redtab4{ background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -282px bottom;}
+.ko .ozt_redtab4:hover, .ko .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/ko/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.ko .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/ko/ozt-cardp-1.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard1 a:hover span, .ko .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-1.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/ko/ozt-cardp-2.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard2 a:hover span, .ko .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-2.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/ko/ozt-cardp-3.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard3 a:hover span, .ko .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-3.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/ko/ozt-cardp-4.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard4 a:hover span, .ko .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-4.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/ko/ozt-cardp-5.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard5 a:hover span, .ko .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-5.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/ko/ozt-cardp-6.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard6 a:hover span, .ko .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-6.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/ko/ozt-cardp-7.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard7 a:hover span, .ko .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-7.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/ko/ozt-cardp-8.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard8 a:hover span, .ko .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-8.png) no-repeat 0 -69px;}
+.ko .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/ko/ozt-cardp-9.png) no-repeat;}
+.ko .ozt_menu_mid li#pcard9 a:hover span, .ko .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/ko/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+
+/*pt*/
+.pt .backtxt{	background:url(../images/zen-tarot/pt/reading.png) no-repeat;}
+.pt .backtxt:hover{	background:url(../images/zen-tarot/pt/reading.png) no-repeat bottom;}
+.pt .addtofav{	background:url(../images/zen-tarot/pt/add-to-favorites1.png) no-repeat; width:128px;}
+.pt .addtofav:hover{	background:url(../images/zen-tarot/pt/add-to-favorites1.png) no-repeat bottom left;}
+
+.pt .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat 0 0; }
+.pt .ozt-tabs label:hover .ozt-tabs1, .pt .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat 0 bottom;}
+.pt .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat -119px 0; }
+.pt .ozt-tabs label:hover .ozt-tabs2, .pt .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat -119px bottom;}
+.pt .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.pt .ozt-tabs label:hover .ozt-tabs3, .pt .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/pt/ozt-tabs.png) no-repeat -223px bottom;}
+
+.pt .ozt_redtab1{ background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat 0 bottom;}
+.pt .ozt_redtab1:hover, .pt .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat 0 0px;}
+.pt .ozt_redtab2{ background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -79px bottom; width:90px;}
+.pt .ozt_redtab2:hover, .pt .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -79px 0px;}
+.pt .ozt_redtab3{ background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -188px bottom;}
+.pt .ozt_redtab3:hover, .pt .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -188px 0px;}
+.pt .ozt_redtab4{ background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -275px bottom; width:102px;}
+.pt .ozt_redtab4:hover, .pt .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/pt/ozt-red-buttons.png) no-repeat -275px 0px;}
+
+.pt .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/pt/ozt-cardp-1.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard1 a:hover span, .pt .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-1.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/pt/ozt-cardp-2.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard2 a:hover span, .pt .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-2.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/pt/ozt-cardp-3.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard3 a:hover span, .pt .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-3.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/pt/ozt-cardp-4.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard4 a:hover span, .pt .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-4.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/pt/ozt-cardp-5.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard5 a:hover span, .pt .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-5.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/pt/ozt-cardp-6.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard6 a:hover span, .pt .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-6.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/pt/ozt-cardp-7.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard7 a:hover span, .pt .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-7.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/pt/ozt-cardp-8.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard8 a:hover span, .pt .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-8.png) no-repeat 0 -69px;}
+.pt .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/pt/ozt-cardp-9.png) no-repeat;}
+.pt .ozt_menu_mid li#pcard9 a:hover span, .pt .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/pt/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*ru*/
+.ru .backtxt{	background:url(../images/zen-tarot/ru/reading.png) no-repeat;}
+.ru .backtxt:hover{	background:url(../images/zen-tarot/ru/reading.png) no-repeat bottom;}
+.ru .addtofav{	background:url(../images/zen-tarot/ru/add-to-favorites1.png) no-repeat; width:155px;}
+.ru .addtofav:hover{	background:url(../images/zen-tarot/ru/add-to-favorites1.png) no-repeat bottom left;}
+
+.ru .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat 0 0; width:70px; }
+.ru .ozt-tabs label:hover .ozt-tabs1, .ru .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat 0 bottom;}
+.ru .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat -119px 0; }
+.ru .ozt-tabs label:hover .ozt-tabs2, .ru .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat -119px bottom;}
+.ru .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.ru .ozt-tabs label:hover .ozt-tabs3, .ru .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/ru/ozt-tabs.png) no-repeat -223px bottom;}
+
+.ru .ozt_redtab1{ background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat 0 bottom; width:56px;}
+.ru .ozt_redtab1:hover, .ru .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat 0 0px;}
+.ru .ozt_redtab2{ background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -98px bottom;}
+.ru .ozt_redtab2:hover, .ru .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -98px 0px;}
+.ru .ozt_redtab3{ background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -188px bottom; width:96px;}
+.ru .ozt_redtab3:hover, .ru .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -188px 0px;}
+.ru .ozt_redtab4{ background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -302px bottom; width:110px;}
+.ru .ozt_redtab4:hover, .ru .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/ru/ozt-red-buttons.png) no-repeat -302px 0px;}
+
+.ru .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/ru/ozt-cardp-1.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard1 a:hover span, .ru .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-1.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/ru/ozt-cardp-2.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard2 a:hover span, .ru .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-2.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard3 a span{	width:73px; background:url(../images/zen-tarot/ru/ozt-cardp-3.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard3 a:hover span, .ru .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-3.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/ru/ozt-cardp-4.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard4 a:hover span, .ru .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-4.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/ru/ozt-cardp-5.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard5 a:hover span, .ru .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-5.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/ru/ozt-cardp-6.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard6 a:hover span, .ru .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-6.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/ru/ozt-cardp-7.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard7 a:hover span, .ru .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-7.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/ru/ozt-cardp-8.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard8 a:hover span, .ru .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-8.png) no-repeat 0 -69px;}
+.ru .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/ru/ozt-cardp-9.png) no-repeat;}
+.ru .ozt_menu_mid li#pcard9 a:hover span, .ru .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/ru/ozt-cardp-9.png) no-repeat 0 -69px;}
+
+/*es*/
+.es .backtxt{	background:url(../images/zen-tarot/es/reading.png) no-repeat;}
+.es .backtxt:hover{	background:url(../images/zen-tarot/es/reading.png) no-repeat bottom;}
+.es .addtofav{	background:url(../images/zen-tarot/es/add-to-favorites1.png) no-repeat; width:118px;}
+.es .addtofav:hover{	background:url(../images/zen-tarot/es/add-to-favorites1.png) no-repeat bottom left;}
+
+.es .ozt-tabs label .ozt-tabs1{	background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat 0 0; }
+.es .ozt-tabs label:hover .ozt-tabs1, .es .ozt-tabs label.active span.ozt-tabs1{ background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat 0 bottom;}
+.es .ozt-tabs label .ozt-tabs2{	background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat -119px 0; }
+.es .ozt-tabs label:hover .ozt-tabs2, .es .ozt-tabs label.active span.ozt-tabs2{ background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat -119px bottom;}
+.es .ozt-tabs label .ozt-tabs3{	background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat -223px 0; height:41px; display:block; margin:0 auto;}
+.es .ozt-tabs label:hover .ozt-tabs3, .es .ozt-tabs label.active span.ozt-tabs3{ background:url(../images/zen-tarot/es/ozt-tabs.png) no-repeat -223px bottom;}
+
+.es .ozt_redtab1{ background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat 0 bottom; width:57px;}
+.es .ozt_redtab1:hover, .es .ozt_bnav_mid li a.active .ozt_redtab1{	background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat 0 0px;}
+.es .ozt_redtab2{ background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -98px bottom;}
+.es .ozt_redtab2:hover, .es .ozt_bnav_mid li a.active .ozt_redtab2{	background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -98px 0px;}
+.es .ozt_redtab3{ background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -188px bottom;}
+.es .ozt_redtab3:hover, .es .ozt_bnav_mid li a.active .ozt_redtab3{	background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -188px 0px;}
+.es .ozt_redtab4{ background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -282px bottom; width:94px;}
+.es .ozt_redtab4:hover, .es .ozt_bnav_mid li a.active .ozt_redtab4{	background:url(../images/zen-tarot/es/ozt-red-buttons.png) no-repeat -282px 0px;}
+
+.es .ozt_menu_mid li#pcard1 a span{ width:55px; background:url(../images/zen-tarot/es/ozt-cardp-1.png) no-repeat;}
+.es .ozt_menu_mid li#pcard1 a:hover span, .es .ozt_menu_mid li#pcard1 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-1.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard2 a span{	width:48px; background:url(../images/zen-tarot/es/ozt-cardp-2.png) no-repeat;}
+.es .ozt_menu_mid li#pcard2 a:hover span, .es .ozt_menu_mid li#pcard2 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-2.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard3 a span{	width:47px; background:url(../images/zen-tarot/es/ozt-cardp-3.png) no-repeat;}
+.es .ozt_menu_mid li#pcard3 a:hover span, .es .ozt_menu_mid li#pcard3 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-3.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard4 a span{	width:77px; background:url(../images/zen-tarot/es/ozt-cardp-4.png) no-repeat;}
+.es .ozt_menu_mid li#pcard4 a:hover span, .es .ozt_menu_mid li#pcard4 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-4.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard5 a span{	width:86px; background:url(../images/zen-tarot/es/ozt-cardp-5.png) no-repeat;}
+.es .ozt_menu_mid li#pcard5 a:hover span, .es .ozt_menu_mid li#pcard5 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-5.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard6 a span{	width:48px; background:url(../images/zen-tarot/es/ozt-cardp-6.png) no-repeat;}
+.es .ozt_menu_mid li#pcard6 a:hover span, .es .ozt_menu_mid li#pcard6 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-6.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard7 a span{	width:95px; background:url(../images/zen-tarot/es/ozt-cardp-7.png) no-repeat;}
+.es .ozt_menu_mid li#pcard7 a:hover span, .es .ozt_menu_mid li#pcard7 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-7.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard8 a span{	width:61px; background:url(../images/zen-tarot/es/ozt-cardp-8.png) no-repeat;}
+.es .ozt_menu_mid li#pcard8 a:hover span, .es .ozt_menu_mid li#pcard8 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-8.png) no-repeat 0 -69px;}
+.es .ozt_menu_mid li#pcard9 a span{	width:53px; background:url(../images/zen-tarot/es/ozt-cardp-9.png) no-repeat;}
+.es .ozt_menu_mid li#pcard9 a:hover span, .es .ozt_menu_mid li#pcard9 a.active span{ background:url(../images/zen-tarot/es/ozt-cardp-9.png) no-repeat 0 -69px;}
+/* Osho Zen Tarot End */
+
+.cardname
+{	color: #FFFFFF;
+    display: block !important;
+    font-size: 20px;
+    font-weight: bold; margin:0;
+    margin-top: -28px;
+    position: relative;
+    text-align: center;
+	font-family: Lato,Arial,sans-serif;
+}
+.cardname p
+{	margin:0; padding:0; font-size: 20px;
+    font-weight: bold; color: #FFFFFF; text-align: center; display:block;
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1060px)
+{
+/* Osho Zen Tarot Start */
+.o_menus li.first a
+{	/*padding-left:0px;*/
+}
+.ozt_logo
+{	float:left; width:auto;
+}
+.forall
+{	width:auto; margin-left:0px; height:470px; overflow:auto;
+}
+.forall .sponsor
+{	margin-right:16px;
+}
+.ozt_sec3_lt
+{	padding-right:25px;
+}
+.ozt_sec3_rt
+{	width:310px;
+}
+.ozt-tabs label
+{	width:102px;
+}
+.ozt_sec3_lt2
+{	float:left; width:305px; padding-right:10px;
+}
+/* Osho Zen Tarot End */
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) 
+{
+
+/* Osho Zen Tarot Start */
+.o_menus li.first a
+{	/*padding-left:0px;*/
+}
+.o_menus li a
+{	padding-left:8px; padding-right:8px;
+}
+.ozt_logo
+{	width:100%; padding-bottom:20px;
+}
+.ozt_menu
+{	width:100%;
+}
+.ozt_menu_mid li a, .ozt_menu_mid li.w100 a
+{	width:auto; padding-left:9px; padding-right:9px;
+}
+.ozt_menu_mid li a img { float:left; }
+.ozt_menu_mid li.w100 a
+{	padding-left:12px; padding-right:12px;
+}
+.unlimitedright
+{	font-size:20px; text-decoration:none; padding-top:9px;
+}
+.ozt_sec2_sub3 {
+    padding: 0 20px;
+}
+.forall
+{	width:auto; margin-left:0px; height:470px; overflow:auto;
+}
+.forall .sponsor
+{	margin-right:10px;
+}
+.ozt_sec3_rt
+{	width:100%; margin-top:25px;
+}
+.ozt-tabs label
+{	width:248px;
+}
+.ozt_sec3_rttxt
+{	padding-top:20px; padding-bottom:0px;
+}
+.ozt_sec3_lt2 {
+    width: 390px; padding-right:5px;
+}
+.rightpad
+{	padding-right:25px;
+}
+/* Osho Zen Tarot End */
+}
+@media only screen and (min-width: 480px) and (max-width: 767px)
+{
+/* Osho Zen Tarot Start */
+.o_menus li.first a
+{	/*padding-left:0px;*/
+}
+.o_menus li a
+{	padding:5px 5px; height:auto; width:130px;
+}
+.o_menus li a img
+{	height:23px; float:left;
+}
+.ozt_logo
+{	width:100%; padding-bottom:20px;
+}
+.ozt_menu
+{	width:100%;
+}
+.ozt_menu_mid li a, .ozt_menu_mid li.w100 a, .ozt_menu_mid li.last a
+{	width:auto; padding:10px 0 0 0; height:65px; border-right:1px solid #CCC; border-bottom:1px solid #CCC;
+	width:104px; 
+}
+.ozt_menu_mid li.last a
+{	width:419px;
+}
+.unlimitedright
+{	font-size:18px; text-decoration:none; padding-top:5px; padding-bottom:5px;
+	width:100%; text-align:center;
+}
+.ozt_sec2_sub1
+{	padding-bottom:20px; margin-bottom:10px;
+}
+.ozt_menu_lt, .ozt_menu_rt
+{	display:none;
+}
+.ozt_menu_mid
+{	height:auto; background:none; border:1px solid #CCC; border-right:0px; border-bottom:0px;
+}
+.ozt_sec2_sub3 {
+    padding: 0 10px;
+}
+.forall
+{	width:auto; margin-left:0px; height:470px; overflow:auto;
+}
+.forall .sponsor
+{	margin-right:10px;
+}
+.ozt_sec3_lt
+{	width:100%; float:left; padding:0 0 20px 0px;
+}
+.ozt_card_thumb2
+{	width:280px; margin:0 auto; float:none; padding:20px 0 10px 0;
+}
+.ozt_sec3_rt
+{	width:100%; margin-top:25px;
+}
+.ozt-tabs label
+{	width:139px;
+}
+.ozt_sec3_rttxt
+{	padding-top:20px; padding-bottom:0px;
+}
+.ozt_sec3_mid
+{	margin-left:35px;
+}
+.ozt_sec3_lt2 {
+    width: 100%;
+}
+.ozt_sec3_lt2 .ozt_card_thumb2
+{	width:100%; height:160px; padding:0px; margin:20px 0;
+}
+.ozt_sec3_lt2 .ozt_card_thumb2 .sponsor { margin-right:8px; }
+.ozt_addto
+{	padding-right:0px;
+}
+.favoritelist
+{	width:418px;
+}
+/* Osho Zen Tarot End */
+
+}
+@media screen and (max-width: 479px) 
+{
+.cardname
+{	font-size: 18px;
+    margin-top: -32px;
+}
+/* Osho Zen Tarot Start */
+.o_menus li.first a
+{	
+}
+.o_menus li a
+{	padding:5px 0px 5px 8px; width:132px;
+}
+.o_menus li a img
+{	float:left;
+}
+.o_menus li.last
+{	width:100%;
+}
+.ozt_logo
+{	width:100%; padding-bottom:20px;
+}
+.ozt_menu
+{	width:100%;
+}
+.ozt_menu_mid li a, .ozt_menu_mid li.w100 a, .ozt_menu_mid li.last a
+{	width:auto; padding:10px 0 0 0; height:65px; border-right:1px solid #CCC; border-bottom:1px solid #CCC;
+	width:138px;
+}
+.ozt_menu_mid li.last a
+{	width:279px;
+}
+.unlimitedright
+{	font-size:18px; text-decoration:none; padding-top:5px; padding-bottom:5px;
+	width:100%; text-align:center;
+}
+.ozt_sec2_sub1
+{	padding-bottom:0px; margin-bottom:10px;
+}
+.ozt_menu_lt, .ozt_menu_rt
+{	display:none;
+}
+.ozt_menu_mid
+{	height:auto; background:none; border:1px solid #CCC; border-right:0px; border-bottom:0px;
+}
+.ozt_sec2_sub3 {
+    padding: 0 5px;
+}
+.ozt_bnav
+{
+}
+.ozt_bnav_lt, .ozt_bnav_rt
+{	display:none;
+}
+.ozt_bnav_mid
+{	height:auto;
+}
+.ozt_bnav_mid li a
+{	width:138px; padding-left:0px; padding-right:0px;
+}
+.ozt_bnav_mid li a span
+{	margin:0 auto; display:block; float:none;
+}
+.forall
+{	width:auto; margin-left:0px; height:470px; overflow:auto;
+}
+.forall .sponsor
+{	margin-right:17px;
+}
+
+
+.ozt_sec3_lt
+{	width:100%; float:left; padding:0 0 10px 0;
+}
+.ozt_card_thumb2
+{	width:280px; margin:0 auto; float:none; padding:20px 0;
+}
+.ozt_sec3_rt
+{	width:100%; margin-top:25px;
+}
+.ozt-tabs label
+{	width:92px;
+}
+.ozt_sec3_rttxt
+{	padding-top:20px; padding-bottom:0px;
+}
+.ozt_sec3_mid
+{	margin-left:0; width:100%; background:none; height:auto;
+}
+.ozt_sec3_mid img
+{	margin-left:0; width:100%; background:none; height:auto; padding:2px 0 10px 0; background:#000000;
+	border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px;
+}
+.ozt_sec3_lt2 {
+    width: 100%;
+
+}
+.ozt_sec3_lt2 .ozt_card_thumb2
+{	width:100%; height:160px; padding:0px; margin:20px 0 10px 0;
+}
+.ozt_sec3_lt2 .ozt_card_thumb2 .sponsor { margin-right:11px; }
+.ozt_addto
+{	padding-right:0px;
+}
+.ozt_sec2_sub1
+{	padding-bottom:15px;
+}
+.favoritelist
+{	width:278px;
+}
+/* Osho Zen Tarot End */
+
+}

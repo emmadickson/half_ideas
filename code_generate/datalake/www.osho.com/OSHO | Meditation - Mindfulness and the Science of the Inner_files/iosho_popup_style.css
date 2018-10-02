@@ -1,0 +1,91 @@
+
+.fclear {clear:both; float:none; height:0px; overflow:hidden;}
+.fleft  {float:left;}
+.fright {float:right;}
+
+#ouibounce-modal .pagemn1{ max-width:450px; margin:0 auto;}
+#ouibounce-modal .pop_up_mn_1{ float:left; width:100%; background:#000000; margin:0 0 0 0; border:5px #ffffff solid; border-radius:5px}
+#ouibounce-modal .pop_up_mn_1 .pop_up_pad{ padding:20px}
+#ouibounce-modal .pop_up_mn_1 .banner{ float:left; width:100%; text-align:center;}
+#ouibounce-modal .pop_up_mn_1 .content {float:left; width:100%; text-align:center;}
+#ouibounce-modal .pop_up_mn_1 .content p{ font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin:15px 0 0 0}
+#ouibounce-modal .pop_up_mn_1 .submit_form{ float:left; width:100%; background:#ffffff; margin:20px 0 0 0}
+#ouibounce-modal .pop_up_mn_1 .submit_form_pad{ padding:15px;}
+#ouibounce-modal .pop_up_mn_1 .inputtext1{ border:2px #a5a5a5 solid; background:#ffffff; width:41%; padding:15px 10px; margin:0 15px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#1b1b1b; }
+#ouibounce-modal .pop_up_mn_1 .inputtext2{ border:2px #a5a5a5 solid; background:#ffffff; width:41%; padding:15px 10px; margin:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#1b1b1b; }
+#ouibounce-modal .pop_up_mn_1 .yes_please_btn{ background:#0060fe; border:2px #0060fe solid;; color:#ffffff; cursor:pointer; padding:14px 0; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; text-transform:uppercase; margin:15px 0 0 0}
+#ouibounce-modal .pop_up_mn_1 .yes_please_btn:hover{ opacity:0.7}
+
+
+#ouibounce-modal .pagemn2{ max-width:600px; margin:0 auto;}
+#ouibounce-modal .pop_up_mn_2 { float:left; width:100%; background:#000000; margin:0 0 0 0}
+#ouibounce-modal .pop_up_mn_2 .pop_up_pad{ padding:20px}
+#ouibounce-modal .pop_up_mn_2 .banner{ float:left; width:49%; text-align:center;}
+#ouibounce-modal .pop_up_mn_2 .content {float:right; width:49%; text-align:left;}
+#ouibounce-modal .pop_up_mn_2 .content p{ font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#ffffff; margin:0 0 15px 0; line-height:22px}
+#ouibounce-modal .pop_up_mn_2 .submit_form{ float:left; width:100%; background:#ffffff; margin:0}
+#ouibounce-modal .pop_up_mn_2 .submit_form_pad{ padding:15px;}
+#ouibounce-modal .inputtext1{ border:2px #a5a5a5 solid; background:#ffffff; width:44%; padding:15px 10px; margin:0 10px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#1b1b1b; }
+#ouibounce-modal .pop_up_mn_2 .inputtext2{ border:2px #a5a5a5 solid; background:#ffffff; width:44%; padding:15px 10px; margin:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#1b1b1b; }
+#ouibounce-modal .pop_up_mn_2 .yes_please_btn{ background:#0060fe; border:2px #0060fe solid;; color:#ffffff; cursor:pointer; padding:14px 0; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; text-transform:uppercase; margin:15px 0 0 0}
+#ouibounce-modal .pop_up_mn_2 .yes_please_btn:hover{ opacity:0.7}
+
+
+/*======== Start header and Menu class ========*/
+
+
+/*======== Start footer class ========*/
+
+
+/*======== Start content class ========*/
+/*===============keep screen 1024=============*/
+@media screen and (max-width: 1159px) 
+{
+
+}
+
+/*===============keep screen 768=============*/
+@media screen and (max-width: 999px) 
+{
+
+}
+
+/*===============keep screen 480=============*/
+
+
+@media screen and (max-width: 767px){
+	body #ouibounce-modal .modal{ width:300px!important;}
+	body .modal-body .pagemn1 #pop_cls{ right:0!important;}
+	body #ouibounce-modal .pagemn1{ /*height:300px!important; overflow-x:auto!important;*/}
+	body #ouibounce-modal .pop_up_mn_1 .pop_up_pad{ height:300px!important; overflow-x: auto!important;}
+	body #ouibounce-modal .pop_up_mn_1 .submit_form_pad{ padding:15px 15px 40px!important;}
+}
+
+@media screen and (max-width: 767px) 
+{
+#ouibounce-modal .pop_up_mn_1 .inputtext1 { margin:10px 0 0 0; width:94%}
+#ouibounce-modal .pop_up_mn_1 .inputtext2 { margin:10px 0 0 0; width:94%}
+#ouibounce-modal .pop_up_mn_1 .yes_please_btn { margin:10px 0 0 0; width:100%}
+
+#ouibounce-modal .pop_up_mn_2 .inputtext1 { margin:10px 0 0 0; width:94%}
+#ouibounce-modal .pop_up_mn_2 .inputtext2 { margin:10px 0 0 0; width:94%}
+#ouibounce-modal .pop_up_mn_2 .yes_please_btn { margin:10px 0 0 0; width:100%}
+#ouibounce-modal .pop_up_mn_2 .banner{ width:40%;}
+#ouibounce-modal .pop_up_mn_2 .content{ width:60%}
+#ouibounce-modal .pop_up_mn_2 .content p{ font-size:16px}
+} 
+
+
+/*===============keep screen 320=============*/
+@media screen and (max-width: 479px) 
+{
+#ouibounce-modal .pop_up_mn_1 .inputtext1 {width: 90%;}
+#ouibounce-modal .pop_up_mn_1 .inputtext2 {width: 90%;}
+
+#ouibounce-modal .pop_up_mn_2 .inputtext1 {width: 90%;}
+#ouibounce-modal .pop_up_mn_2 .inputtext2 {width: 90%;}
+#ouibounce-modal .pop_up_mn_2 .banner{ width:100%;}
+#ouibounce-modal .pop_up_mn_2 .content{ width:100%}
+
+}
+

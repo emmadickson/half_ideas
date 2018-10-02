@@ -1,0 +1,16 @@
+	
+	
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+		/*border:1px solid #D9D9D9;*/
+	}
+	
+	.button.add_to_cart_button {}
+	
+	.woocommerce table th { background:#3a4e6a; }
+	.woocommerce .button { background:#313947; } 
+	
+	
+	.woocommerce #respond input#submit.alt, 
+	.woocommerce a.button.alt, 
+	.woocommerce button.button.alt, 
+	.woocommerce input.button.alt { background:#313947;	}

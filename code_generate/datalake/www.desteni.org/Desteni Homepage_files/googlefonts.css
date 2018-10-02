@@ -1,0 +1,31 @@
+/* Custom CSS for Google fonts */
+
+.ccm-page h1 {
+	font-family:"Alegreya Sans", sans-serif;
+	font-weight:300;
+}
+
+.ccm-page h2 {
+	font-family:"Alegreya Sans", sans-serif;
+	font-weight:300;
+}
+
+.ccm-page h3 {
+	font-family:"Alegreya Sans", sans-serif;
+	font-weight:100;
+}
+
+.ccm-page h4 {
+	font-family:"Alegreya Sans", sans-serif;
+	font-weight:500;
+}
+
+.ccm-page .ccm-page .top-bar-section li a:not(.button), .ccm-page .top-bar-section li:not(.has-form) a:not(.button), .ccm-page .top-bar-section ul li:hover:not(.has-form) > a, .ccm-page .top-bar-section li:not(.has-form) a:hover:not(.button), .ccm-page .c5h-wrapper .top-bar-section ul li:hover > a, .ccm-page .top-bar-section li.active:not(.has-form) > a:not(.button), .ccm-page .top-bar-section li.active:not(.has-form) > a:hover:not(.button), .ccm-page .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button), .ccm-page .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button), .ccm-page .top-bar-section .dropdown li.active:not(.has-form) > a:not(.button) {
+	font-family:"Alegreya Sans SC", sans-serif;
+	font-weight:400;
+}
+
+.ccm-page .ccm-page button, .ccm-page .button, .ccm-page button:hover, .ccm-page button:focus, .ccm-page .button:hover, .ccm-page .button:focus, .ccm-page button.secondary, .ccm-page .button.secondary, .ccm-page button.secondary:hover, .ccm-page button.secondary:focus, .ccm-page .button.secondary:hover, .ccm-page .button.secondary:focus, .ccm-page button.success, .ccm-page .button.success, .ccm-page button.success:hover, .ccm-page button.success:focus, .ccm-page .button.success:hover, .ccm-page .button.success:focus, .ccm-page button.alert, .ccm-page .button.alert, .ccm-page button.alert:hover, .ccm-page button.alert:focus, .ccm-page .button.alert:hover, .ccm-page .button.alert:focus {
+	font-family:"Cantarell", sans-serif;
+	font-weight:400;
+}

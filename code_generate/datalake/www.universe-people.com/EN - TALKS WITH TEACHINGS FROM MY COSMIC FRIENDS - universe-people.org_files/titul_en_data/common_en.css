@@ -1,0 +1,139 @@
+/*
+	Soubor: common_en.css
+	Popis:  Spolecne CSS styly
+*/
+
+img	{ border: 0px none; }
+img.lazy
+{	display: none;
+	background: #FFE595 url('images/animace_kolecko_1.gif') no-repeat center center;
+}
+
+.sprite_evacuation_vlajky_statu
+{	background-image: url('images/sprite_evacuation_vlajky_statu_en.png');
+	background-repeat: no-repeat;
+	width: 68px;
+	height: 45px;
+	display: inline-block;
+}
+
+.sprite_vlajky_webu
+{	background-image: url('images/sprite_vlajky_webu.png');
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sprite_vlajky_webu.vlajka_cz	{background-position: -10px -10px;}
+.sprite_vlajky_webu.vlajka_en	{background-position: -10px -75px;}
+.sprite_vlajky_webu.vlajka_de	{background-position: -10px -140px;}
+.sprite_vlajky_webu.vlajka_es	{background-position: -10px -205px;}
+.sprite_vlajky_webu.vlajka_ru	{background-position: -10px -270px;}
+.sprite_vlajky_webu.vlajka_fr	{background-position: -10px -335px;}
+.sprite_vlajky_webu.vlajka_it	{background-position: -10px -400px;}
+.sprite_vlajky_webu.vlajka_pl	{background-position: -10px -465px;}
+.sprite_vlajky_webu.vlajka_hu	{background-position: -10px -530px;}
+.sprite_vlajky_webu.vlajka_hr	{background-position: -10px -595px;}
+.sprite_vlajky_webu.vlajka_pt	{background-position: -10px -660px;}
+.sprite_vlajky_webu.vlajka_bg	{background-position: -10px -725px;}
+.sprite_vlajky_webu.vlajka_nl	{background-position: -10px -790px;}
+.sprite_vlajky_webu.vlajka_ro	{background-position: -10px -855px;}
+.sprite_vlajky_webu.vlajka_no	{background-position: -10px -920px;}
+.sprite_vlajky_webu.vlajka_se	{background-position: -10px -985px;}
+.sprite_vlajky_webu.vlajka_fi	{background-position: -10px -1050px;}
+.sprite_vlajky_webu.vlajka_tr	{background-position: -10px -1115px;}
+.sprite_vlajky_webu.vlajka_si	{background-position: -10px -1180px;}
+.sprite_vlajky_webu.vlajka_gr	{background-position: -10px -1245px;}
+.sprite_vlajky_webu.vlajka_cn	{background-position: -10px -1310px;}
+.sprite_vlajky_webu.vlajka_ar	{background-position: -10px -1375px;}
+
+.sprite_vlajky_webu_male
+{	background-image: url('images/sprite_vlajky_webu_male.png');
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 19px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sprite_vlajky_webu_male.vlajecka_cz	{background-position: -10px -15px;}
+.sprite_vlajky_webu_male.vlajecka_en	{background-position: -10px -65px;}
+.sprite_vlajky_webu_male.vlajecka_de	{background-position: -10px -115px;}
+.sprite_vlajky_webu_male.vlajecka_es	{background-position: -10px -165px;}
+.sprite_vlajky_webu_male.vlajecka_ru	{background-position: -10px -215px;}
+.sprite_vlajky_webu_male.vlajecka_fr	{background-position: -10px -265px;}
+.sprite_vlajky_webu_male.vlajecka_it	{background-position: -10px -315px;}
+.sprite_vlajky_webu_male.vlajecka_pl	{background-position: -10px -365px;}
+.sprite_vlajky_webu_male.vlajecka_hu	{background-position: -10px -415px;}
+.sprite_vlajky_webu_male.vlajecka_hr	{background-position: -10px -465px;}
+.sprite_vlajky_webu_male.vlajecka_pt	{background-position: -10px -515px;}
+.sprite_vlajky_webu_male.vlajecka_bg	{background-position: -10px -565px;}
+.sprite_vlajky_webu_male.vlajecka_nl	{background-position: -10px -615px;}
+.sprite_vlajky_webu_male.vlajecka_ro	{background-position: -10px -665px;}
+.sprite_vlajky_webu_male.vlajecka_tr	{background-position: -10px -715px;}
+.sprite_vlajky_webu_male.vlajecka_no	{background-position: -10px -765px;}
+.sprite_vlajky_webu_male.vlajecka_se	{background-position: -10px -815px;}
+.sprite_vlajky_webu_male.vlajecka_fi	{background-position: -10px -865px;}
+.sprite_vlajky_webu_male.vlajecka_rs	{background-position: -10px -915px;}
+.sprite_vlajky_webu_male.vlajecka_si	{background-position: -10px -965px;}
+.sprite_vlajky_webu_male.vlajecka_gr	{background-position: -10px -1015px;}
+.sprite_vlajky_webu_male.vlajecka_cn	{background-position: -10px -1065px;}
+.sprite_vlajky_webu_male.vlajecka_sk	{background-position: -10px -1115px;}
+
+.sprite_stazeni
+{	background-image: url('images/sprite_stazeni.png');
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 60px;
+	display: inline-block;
+	/*vertical-align: middle;*/
+}
+a.sprite_stazeni.balik	{background-position: -10px -10px;}
+a.sprite_stazeni.balik:hover	{background-position: -10px -90px;}
+a.sprite_stazeni.balik_hover	{background-position: -10px -90px;}
+a.sprite_stazeni.balik_cb	{background-position: -10px -170px;}
+a.sprite_stazeni.balik_cb:hover	{background-position: -10px -250px;}
+a.sprite_stazeni.balik_cb_hover	{background-position: -10px -250px;}
+a .sprite_stazeni.balik	{background-position: -10px -10px;}
+a .sprite_stazeni.balik:hover	{background-position: -10px -90px;}
+a .sprite_stazeni.balik_hover	{background-position: -10px -90px;}
+a .sprite_stazeni.balik_cb	{background-position: -10px -170px;}
+a .sprite_stazeni.balik_cb:hover	{background-position: -10px -250px;}
+a .sprite_stazeni.balik_cb_hover	{background-position: -10px -250px;}
+
+.sprite_tlacitka
+{	background-image: url('images/sprite_tlacitka_en.png');
+	background-repeat: no-repeat;
+	width: 37px;
+	height: 31px;
+	display: inline-block;
+	vertical-align: middle;
+}
+a.sprite_tlacitka.leve	{background-position: -10px -10px;}
+a.sprite_tlacitka.leve:hover	{background-position: -10px -61px; background-color: transparent;}
+a.sprite_tlacitka.prave	{background-position: -10px -112px;}
+a.sprite_tlacitka.prave:hover	{background-position: -10px -163px; background-color: transparent;}
+a.sprite_tlacitka.obrazky_seznam	{background-position: -10px -214px; width: 137px; height: 43px;}
+a.sprite_tlacitka.obrazky_seznam:hover	{background-position: -10px -277px; background-color: transparent;}
+a.sprite_tlacitka.podklady_tisk	{background-position: -10px -338px; width: 263px; height: 40px;}
+a.sprite_tlacitka.podklady_tisk:hover	{background-position: -10px -398px; background-color: transparent;}
+a.sprite_tlacitka.noviny_seznam	{background-position: -10px -460px; width: 206px; height: 43px;}
+a.sprite_tlacitka.noviny_seznam:hover	{background-position: -10px -523px; background-color: transparent;}
+
+i.kodek
+{	background-image: url('images/kodek.jpg');
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+i.nota
+{	background-image: url('images/nota.jpg');
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}

@@ -1,0 +1,92 @@
+/*
+* Copyright (C) 2006-2009 Corllete ltd (clabteam.com), Released under Creative Common license - http://creativecommons.org/licenses/by-nc/3.0/
+* Download and update at http://www.free-source.net/
+* $Id:
+*
+* Theme NCore Drop Down Menu Style
+*/
+
+#nav li.fs-linkSep { width: 1px; margin: 0px 0px; height: 53px; }
+
+#nav ul{ position: relative; z-index: 20;}
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 53px;
+}
+
+#nav a, #nav span {
+	padding: 0px 10px 0px;
+	vertical-align: middle;
+	display: block;
+	font: normal 14px/53px Tahoma, "Trebuchet MS", sans-serif;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+#nav span { cursor: pointer; }
+#nav a:hover {
+	/* background-position: 0 -44px; */
+	color: #333;
+}
+
+#nav li { /* all list items */
+	float: left;
+	/* width: 10em;  width needed or else Opera goes nuts */
+}
+
+#nav li ul { /* second-level lists */	position: absolute;	z-index: 990;	width: 220px;	/* display: hidden; */	left: -9999px; 	/* using left instead of display to hide menus because display: none isn't read by screen readers */	padding: 0;	-moz-box-shadow: 3px 3px 3px #6C552D; -webkit-box-shadow: 3px 3px 3px #6C552D; box-shadow: 3px 3px 3px #6C552D;}
+
+#nav li ul li {
+	
+}
+
+#nav li ul li a, #nav li ul li span {
+	display: block;
+	text-align: left;
+	background-image: none;
+	background-color: #D68139;
+	line-height: 30px;
+	font-size: 14px;
+	padding-left: 20px;
+	padding-right: 0px;
+	border-left: 0px solid #CCCCCC;
+	border-right: 0px solid #CCCCCC;
+	border-bottom: 1px solid #FDDF97;
+	width: 220px;
+	w\idth : 200px;
+	text-transform: none;
+	color: #FFF;
+
+	
+}
+#nav li ul li a:hover {
+	background-color: #FFFFC3;
+	color: #333;
+}
+
+#nav li ul ul { /* third-and-above-level lists */
+	margin: -33px 0 0 190px;
+}
+
+
+
+#nav li:hover ul ul,
+#nav li:hover ul ul ul,
+#nav li.sfhover ul ul,
+#nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul,
+#nav li li:hover ul,
+#nav li li li:hover ul,
+#nav li.sfhover ul,
+#nav li li.sfhover ul,
+#nav li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#nav .nav-top { width: 190px; height: 8px; display: block; background: url(images/nav_top.png) 0 0 no-repeat; }
+#nav .nav-bottom { width: 190px; height: 8px; display: block; background: url(images/nav_bottom.png) 0 0 no-repeat; }

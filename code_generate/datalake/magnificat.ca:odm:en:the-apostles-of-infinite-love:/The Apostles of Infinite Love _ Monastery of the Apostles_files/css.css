@@ -1,0 +1,33 @@
+
+div.wm-cleaner{
+	clear: both;
+}
+
+img.wm-thumbnail-img{
+	margin: 5px 0 !important;
+	border: none !important;
+}
+img.wm-thumbnail-img.square{
+	border: none !important;
+	border-radius: 7px !important;
+}
+img.wm-thumbnail-img.circle{
+	border-radius: 100px !important;
+}
+
+span.first_name{
+	word-wrap: break-word !important;
+}
+
+i.jstree-themeicon-custom{
+	width: 20px !important;
+	height: 20px !important;
+}
+
+.wm-custom-tree-icon{
+	background-color: #CCCCCC !important;
+	width: 24px !important;
+	height: 24px !important;
+	border: none !important;
+	border-radius: 100px !important;
+}
